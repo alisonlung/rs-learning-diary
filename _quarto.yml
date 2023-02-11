@@ -20,5 +20,3 @@ format:
     documentclass: scrreprt
 
 editor: visual
-
-output-dir: docs
