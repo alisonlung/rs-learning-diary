@@ -1,0 +1,9 @@
+# Week 1: Introduction to Remote Sensing
+
+## Summary
+
+Remote sensing provides another approach to observe and study features on Earth through collection of satellite image from sensor. With the variety of avaliable platforms, understanding the characteristics and difference between sensors presents an important role when studying features for a specific study area. When considering data provided by different satellite, the user should concern about the basic characteristics: (1) Type of sensor (2) Data Format (3) Resolution For example, in practical,
+
+## Applications
+
+## Reflection
