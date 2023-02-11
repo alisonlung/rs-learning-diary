@@ -1,0 +1,5 @@
+# Week 2: Portfolio
+
+## Week 2 Xaringan Presentation
+
+[Link to Landsat 8 Presentation](https://alisonlung.github.io/rs-xaringan/)
