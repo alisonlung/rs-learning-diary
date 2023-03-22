@@ -1,9 +1,11 @@
-# Preface {.unnumbered}
+*Last updated: `r Sys.Date()`*
 
-This is a Quarto book.
+## Preface {.unnumbered}
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This is a Learning Diary for [CASA0023 Remotely Sensing Cities and Environment](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html).
 
-```{r}
-1 + 1
-```
+## About Me {.unnumbered}
+Hello :) My name is Yuet Yung Lung, an international student from Hong Kong studying MSc Urban Spatial Science at UCL. I graduated from BSc Geomatics (Land Surveying), Hong Kong Polytechnic University. I formerly worked as a land survey graduate and GIS technician in HK and UK.
+
+Welcome to my Learning Diary! I am excited to learn more about remote sensing :D
+![GIF By [Rick And Morty](https://rickandmorty.com/)](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGNlNDU5ZTBjYmE1ODU5NzQzNGIxODEwOTdkNjAyM2RiMTJkZjMzMyZjdD1n/DTh1K6VuivY0gEuzWy/giphy.gif)

@@ -1,32 +1,260 @@
 {
     "sources": [
         {
-            "DOI": "10.1093/comjnl/27.2.97",
-            "ISSN": "0010-4620",
-            "URL": "https://doi.org/10.1093/comjnl/27.2.97",
+            "DOI": "https://doi.org/10.1016/B978-008045405-4.00237-8",
+            "ISBN": "978-0-08-045405-4",
+            "URL": "https://www.sciencedirect.com/science/article/pii/B9780080454054002378",
+            "abstract": "Remotely sensed data and methods are used extensively to provide data layers that are used in ecological modeling. Understanding fundamental remotely sensed concepts helps ecosystem modelers make informed decisions regarding the utility and limitations of the broad spectrum of available remote-sensing and derived data. The main focus of this article is to introduce remote-sensing science and its application to ecological modeling. It is not designed to be comprehensive on the subject of remote sensing, but rather to introduce basic concepts and terminology. The intended audience is consumers, not producers of remote-sensing products. The article begins with an overview of fundamental remote-sensing concepts. This is followed by a section on how remote-sensing data can be used to derive a broad range of biophysical data sets that are useful for terrestrial and aquatic ecological modeling. Several of the more common data sets derived from remotely sensed data are described with comments about how the data sets are produced, their strengths, and limitations. The article concludes with a summary of the accuracy and validation.",
             "author": [
                 {
-                    "family": "Knuth",
-                    "given": "Donald E."
+                    "family": "Horning",
+                    "given": "N."
                 }
             ],
-            "container-title": "Comput. J.",
-            "id": "knuth84",
-            "issue": "2",
+            "container-title": "Encyclopedia of ecology",
+            "editor": [
+                {
+                    "family": "Jørgensen",
+                    "given": "Sven Erik"
+                },
+                {
+                    "family": "Fath",
+                    "given": "Brian D."
+                }
+            ],
+            "id": "jorgensen_remote_2008",
             "issued": {
                 "date-parts": [
                     [
-                        1984,
-                        5
+                        2008
                     ]
                 ]
             },
-            "page": "97-111",
-            "publisher": "Oxford University Press, Inc.",
-            "publisher-place": "USA",
-            "title": "Literate programming",
+            "keyword": "Accuracy assessment, Image, Land cover, Land cover change, Modeling, Remote sensing, Satellite, Soil moisture, Topography, Validation",
+            "page": "2986-2994",
+            "publisher": "Academic Press",
+            "publisher-place": "Oxford",
+            "title": "Remote sensing",
+            "type": "chapter"
+        },
+        {
+            "DOI": "https://doi.org/10.1016/B978-0-12-815826-5.00001-5",
+            "ISBN": "978-0-12-815826-5",
+            "URL": "https://www.sciencedirect.com/science/article/pii/B9780128158265000015",
+            "abstract": "This chapter provides an overview of the remote sensing system, including the platform and sensor system, data transmission and ground receiving system, processing system of radiometric and geometric properties, analysis system for mapping category variables and generating high-level products of quantitative variables, product production and distribution system, product validation system, and remote sensing applications. It aims to present a complete picture of the state-of-the-art development of remote sensing techniques by linking different chapters in the rest of the book and filling in any possible gaps.",
+            "container-title": "Advanced remote sensing (second edition)",
+            "edition": "Second Edition",
+            "editor": [
+                {
+                    "family": "Liang",
+                    "given": "Shunlin"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Jindi"
+                }
+            ],
+            "id": "liang_chapter_2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "keyword": "Application, Inversion, Modeling, Remote sensing system, Satellite",
+            "page": "1-57",
+            "publisher": "Academic Press",
+            "title": "Chapter 1 - a systematic view of remote sensing",
+            "type": "chapter"
+        },
+        {
+            "DOI": "https://doi.org/10.1016/j.rse.2019.111626",
+            "ISSN": "0034-4257",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0034425719306467",
+            "abstract": "In the face of the growing challenges brought about by human activities, effective planning and decision-making in biodiversity and ecosystem conservation, restoration, and sustainable development are urgently needed. Ecological models can play a key role in supporting this need and helping to safeguard the natural assets that underpin human wellbeing and support life on land and below water (United Nations Sustainable Development Goals; SDG 15 & 14). The urgency and complexity of safeguarding forest (SDG 15.2) and mountain ecosystems (SDG 15.4), for example, and halting decline in biodiversity (SDG 15.5) in the Anthropocene requires a re-envisioning of how ecological models can best support the comprehensive assessments of biodiversity and its change that are required for successful action. A key opportunity to advance ecological modeling for both predictive and explanatory purposes arises through a collaboration between ecologists and the Earth observation community, and a close integration of remote sensing and species distribution models. Remote sensing products have the capacity to provide continuous spatiotemporal information about key factors driving the distribution of organisms, therefore improving both the use and accuracy of these models for management and planning. Here we first survey the literature on remote sensing data products available to ecological modelers interested in improving predictions of species range dynamics under global change. We specifically explore the key biophysical processes underlying the distribution of species in the Anthropocene including climate variability, changes in land cover, and disturbances. We then discuss potential synergies between the ecological modeling and remote sensing communities, and highlight opportunities to close the data and conceptual gaps that currently impede a more effective application of remote sensing for the monitoring and modeling of ecological systems. Specific attention is given to how potential collaborations between the two communities could lead to new opportunities to report on progress towards global agendas - such as the Agenda 2030 for sustainable development of the United Nations or the Post-2020 Global Biodiversity Framework of the Convention for Biological Diversity, and help guide conservation and management strategies towards sustainability.",
+            "author": [
+                {
+                    "family": "Randin",
+                    "given": "Christophe F."
+                },
+                {
+                    "family": "Ashcroft",
+                    "given": "Michael B."
+                },
+                {
+                    "family": "Bolliger",
+                    "given": "Janine"
+                },
+                {
+                    "family": "Cavender-Bares",
+                    "given": "Jeannine"
+                },
+                {
+                    "family": "Coops",
+                    "given": "Nicholas C."
+                },
+                {
+                    "family": "Dullinger",
+                    "given": "Stefan"
+                },
+                {
+                    "family": "Dirnböck",
+                    "given": "Thomas"
+                },
+                {
+                    "family": "Eckert",
+                    "given": "Sandra"
+                },
+                {
+                    "family": "Ellis",
+                    "given": "Erle"
+                },
+                {
+                    "family": "Fernández",
+                    "given": "Néstor"
+                },
+                {
+                    "family": "Giuliani",
+                    "given": "Gregory"
+                },
+                {
+                    "family": "Guisan",
+                    "given": "Antoine"
+                },
+                {
+                    "family": "Jetz",
+                    "given": "Walter"
+                },
+                {
+                    "family": "Joost",
+                    "given": "Stéphane"
+                },
+                {
+                    "family": "Karger",
+                    "given": "Dirk"
+                },
+                {
+                    "family": "Lembrechts",
+                    "given": "Jonas"
+                },
+                {
+                    "family": "Lenoir",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Luoto",
+                    "given": "Miska"
+                },
+                {
+                    "family": "Morin",
+                    "given": "Xavier"
+                },
+                {
+                    "family": "Price",
+                    "given": "Bronwyn"
+                },
+                {
+                    "family": "Rocchini",
+                    "given": "Duccio"
+                },
+                {
+                    "family": "Schaepman",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Schmid",
+                    "given": "Bernhard"
+                },
+                {
+                    "family": "Verburg",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Wilson",
+                    "given": "Adam"
+                },
+                {
+                    "family": "Woodcock",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Yoccoz",
+                    "given": "Nigel"
+                },
+                {
+                    "family": "Payne",
+                    "given": "Davnah"
+                }
+            ],
+            "container-title": "Remote Sensing of Environment",
+            "id": "randin_monitoring_2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "keyword": "Anthropocene, Monitoring, Remote sensing, Species distribution models, Sustainable development, Terrestrial ecosystems",
+            "page": "111626",
+            "title": "Monitoring biodiversity in the anthropocene using remote sensing in species distribution models",
             "type": "article-journal",
-            "volume": "27"
+            "volume": "239"
+        },
+        {
+            "DOI": "https://doi.org/10.1016/j.agwat.2020.106197",
+            "ISSN": "0378-3774",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S037837741932373X",
+            "abstract": "The current study aims at reviewing and providing advances on methods for estimating and applying crop coefficients from observations of ground cover and vegetation height. The review first focuses on the relationships between single Kc and basal Kcb and various parameters including the fraction of ground covered by the canopy (fc), the leaf area index (LAI), the fraction of ground shaded by the canopy (fshad), the fraction of intercepted light (flight) and intercepted photosynthetic active radiation (fIPAR). These relationships were first studied in the 1970’s, for annual crops, and later, in the last decennia, for tree and vine perennials. Research has now provided a variety of methods to observe and measure fc and height (h) using both ground and remote sensing tools, which has favored the further development of Kc related functions. In the past, these relationships were not used predictively but to support the understanding of dynamics of Kc and Kcb in relation to the processes of evapotranspiration or transpiration, inclusive of the role of soil evaporation. Later, the approach proposed by Allen and Pereira (2009), the A&P approach, used fc and height (h) or LAI data to define a crop density coefficient that was used to directly estimate Kc and Kcb values for a variety of annual and perennial crops in both research and practice. It is opportune to review the A&P method in the context of a variety of studies that have derived Kc and Kcb values from field measured data with simultaneously observed ground cover fc and height. Applications used to test the approach include various tree and vine crops (olive, pear, and lemon orchards and vineyards), vegetable crops (pea, onion and tomato crops), field crops (barley, wheat, maize, sunflower, canola, cotton and soybean crops), as well as a grassland and a Bermudagrass pasture. Comparisons of Kcb values computed with the A&P method produced regression coefficients close to 1.0 and coefficients of determination ≥ 0.90, except for orchards. Results indicate that the A&P approach can produce estimates of potential Kcb, using vegetation characteristics alone, within reasonable or acceptable error, and are useful for refining Kcb for conditions of plant spacing, size and density that differ from standard values. The comparisons provide parameters appropriate to applications for the tested crops. In addition, the A&P approach was applied with remotely sensed fc data for a variety of crops in California using the Satellite Irrigation Management Support (SIMS) framework. Daily SIMS crop ET (ETc-SIMS) produced Kcb values using the FAO56 and A&P approaches. Combination of satellite derived fc and Kcb values with ETo data from Spatial CIMIS (California Irrigation Management Information System) produced ET estimates that were compared with daily actual crop ET derived from energy balance calculations from micrometeorological instrumentation (ETc EB).Results produced coefficients of regression of 1.05 for field crops and 1.08 for woody crops, and R2 values of 0.81 and 0.91, respectively. These values suggest that daily ETc-SIMS -based ET can be accurately estimated within reasonable error and that the A&P approach is appropriate to support that estimation. It is likely that accuracy can be improved via progress in remote sensing determination of fc. Tabulated Kcb results and calculation parameters are presented in a companion paper in this Special Issue.",
+            "author": [
+                {
+                    "family": "Pereira",
+                    "given": "L. S."
+                },
+                {
+                    "family": "Paredes",
+                    "given": "P."
+                },
+                {
+                    "family": "Melton",
+                    "given": "F."
+                },
+                {
+                    "family": "Johnson",
+                    "given": "L."
+                },
+                {
+                    "family": "Wang",
+                    "given": "T."
+                },
+                {
+                    "family": "López-Urrea",
+                    "given": "R."
+                },
+                {
+                    "family": "Cancela",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Allen",
+                    "given": "R. G."
+                }
+            ],
+            "container-title": "Agricultural Water Management",
+            "id": "pereira_prediction_2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "keyword": "Basal crop coefficients, Density coefficient, Estimates of K for trees and annual crops, f from ground observations, f from NDVI, K under full cover, Operational K from f with SIMS framework",
+            "page": "106197",
+            "title": "Prediction of crop coefficients from fraction of ground cover and height. Background and validation using ground and remote sensing data",
+            "type": "article-journal",
+            "volume": "241"
         }
     ],
     "project_biblios": [
