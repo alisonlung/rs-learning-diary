@@ -8,7 +8,7 @@ In order to correct possible errors in data acquisition and enhance image featur
 
     In radiometric processing, corrections on data can be applied by radiometric calibration, atmospheric correction and orthorectification correction, while visualisation in image can be optimised by image enhancement and image fusion. Referencing to content in this week and @liang_chapter_2020, approaches in radiometric processing are described below:
 
-    ![Flow chart of radiometric processing Source: week 3 content and](img/Capture_3.JPG){fig-align="center" width="554"}
+    ![Flow chart of radiometric processing Source: week 3 content and](img/Capture_3.JPG){fig-align="center" width="537"}
 
     Within image enhancement, various approaches in each category can be performed to enhance spectral features of image. User can adjust how the satellite imagery is presented according to the study design and visual observation. For point operations, contrast enhancement is widely applied to optimise the image contrast and brightness or highlight information in specific DN ranges. To select the appropriate interactive contrast enhancement function, image quality can be assessed by visual observation and image data distribution in histogram through observing the effect of modification [@doi:https://doi.org/10.1002/9781118724194.ch2].
 
@@ -18,15 +18,16 @@ In order to correct possible errors in data acquisition and enhance image featur
 
     -   High pass filters (edge enhancement): remove low frequency information and enhance features with high frequency , where filtering can be combined with contrast enhancement in point operation to adjust the contrast locally in a neighbourhood.
 
-    For correlated multi-variable datasets, principal component analysis is an effective technique, as it can concentrate the maximum information in multi-spectral data into a few uncorrelated principal components. PCA is able to reduce the redundancy in information between bands in multi-spectral data, which redundancy is caused by common image features in topography \[\@doi:https://doi.org/10.1002/9781118724194.ch7\]. Thus, the operation is able to reduce the size of dataset and enable effective image RGB display when using multi-spctral remote sensing image.
+    For correlated multi-variable datasets, principal component analysis is an effective technique, as it can concentrate the maximum information in multi-spectral data into a few uncorrelated principal components. PCA is able to reduce the redundancy in information between bands in multi-spectral data, which redundancy is caused by common image features in topography [@doi:https://doi.org/10.1002/9781118724194.ch7]. Thus, the operation is able to reduce the size of dataset and enable effective image RGB display when using multi-spctral remote sensing image.
 
 2.  Geometric Processing
 
     Image acquired by sensor contains discrepancy with the true spatial properties of landscape, which the distortion can be caused by factors like changes in altitude, attitude and velocity, Earth rotation and curvature, surface relief displacement and perspective projections during image collection [@liang_chapter_2020]. The figure below shows how geometric processing can be applied to original imagery for reducing the distortion by using ground control points and estimating RMSE.
 
-    ![Flow chart of geometric processing](img/Capture_4.JPG){fig-align="center" width="532"}
+    ![Flow chart of geometric processing](img/Capture_4.JPG){fig-align="center" width="526"}
 
-3.  @doi:https://doi.org/10.1002/9781118724194.ch9 pointed out that GCP selections is of vital importance for the accuracy and automation of image warping co-registration, in which manual and semi-automatic GCP can be greatly affected by human error, causing automatic image co-registration to be more widely applied.
+    @doi:https://doi.org/10.1002/9781118724194.ch9 pointed out that GCP selections is of vital importance for the accuracy and automation of image warping\
+    co-registration, in which manual and semi-automatic GCP can be greatly affected by human error, causing automatic image co-registration to be more widely applied.
 
 ## Applications
 

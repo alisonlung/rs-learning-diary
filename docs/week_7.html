@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CASA0023 Learning Diary - 7&nbsp; Week 7: Classification The Big Questions and Accuracy</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./week_8.html" rel="next">
+<link href="./week_6.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CASA0023 Learning Diary</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1: Introduction to Remote Sensing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: Correction of Remote Sensing Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy Application</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5: An Introduction to Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6: Classification</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">7.1</span>  Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">7.2</span>  Application</a>
+  <ul class="collapse">
+  <li><a href="#comparison-between-3-types-of-classification" id="toc-comparison-between-3-types-of-classification" class="nav-link" data-scroll-target="#comparison-between-3-types-of-classification"><span class="toc-section-number">7.2.1</span>  Comparison between 3 types of classification</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7.3</span>  Reflection</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<p>Continuing the content in week 6, this week’s lecture further introduced object based image analysis and sub pixel analysis, then discussed the accuracy assessment in remote sensing classification. Object based image analysis is based on the identification of homogeneity and heterogeneity of cells for generating superpixel, while sub pixel analysis consider fraction that makeup an individual pixel to identify the proportion of landcover by spectral mixture analysis. Table below summarised the characteristics, techniques and required input of pixel based, sub-pixel-based and object based image analysis covered in week 6 &amp; 7.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_14.JPG" class="img-fluid figure-img" width="609"></p>
+<p></p><figcaption class="figure-caption">Summary of pixel, sub-pixel and object image analysis</figcaption><p></p>
+</figure>
+</div>
+<p>Similar to the pixel based analysis, several considerations should be accounted in sub-pixel based analysis to ensure the accuracy of outcome. A major issue is the faction image only provides percentage of land cover type without additional information for assessment, which can be analysed by: (1) Harden the classification to define the most abundant land cover (2) Use high resolution to compare with original sub-pixel analysis</p>
+<p>In general, accuracy assessment in machine learning can be achieved through confusion matrix, kappa coefficient, F1-score and Receiver Operating Characteristic Curve.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_15.JPG" class="img-fluid figure-img" width="586"></p>
+<p></p><figcaption class="figure-caption">Accuracy assessment in machine learning</figcaption><p></p>
+</figure>
+</div>
+<p>Regarding the application in practice, some points are emphasised in class and should be aware of during selection of accuracy assessment method:</p>
+<p><strong><em>Binary Confusion Matrix</em></strong></p>
+<ul>
+<li><p>placement of decision boundary can change the accuracy</p></li>
+<li><p>there is a trade-off between user’s accuracy and producer accuracy</p></li>
+</ul>
+<p><strong><em>Kappa Coefficient</em></strong></p>
+<ul>
+<li><p>there is no clear demarcation to define a good kappa value</p></li>
+<li><p>kappa value can have different level of accuracy</p></li>
+</ul>
+<p><strong><em>F1-Score</em></strong></p>
+<ul>
+<li><p>calculation doesn’t consider true negative</p></li>
+<li><p>assume that precision and recall are equally important</p></li>
+</ul>
+<p><strong><em>Good Practice in General</em></strong></p>
+<ul>
+<li>adopt cross validation with random partition or spatial partition (k-fold/ leave-one-out/ spatial leave-one-out)</li>
+</ul>
+</section>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<section id="comparison-between-3-types-of-classification" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="comparison-between-3-types-of-classification"><span class="header-section-number">7.2.1</span> Comparison between 3 types of classification</h3>
+<p>Under the provision of high resolution satellite image, there is an increasing popularity in applying object-based classification and numerous research compare how pixel-based and object-based perform in different research themes. Recent study by <span class="citation" data-cites="SabaSumbalBahar2022Cops">Saba et al. (<a href="references.html#ref-SabaSumbalBahar2022Cops" role="doc-biblioref">2023</a>)</span> compared pixel, sub-pixel and object-based image analysis techniques for landslides detection in Lesser Himalaya. Authors applied pixel-based maximum likelihood classifier, sub-pixel analysis with sine cardinal and object-based analysis with image segmentation on high resolution satellite images obtained by different sensor, while accuracy was examined by binary confusion matrix, kappa coefficient and F-score. Result from this study presented that object-based image classification retrieved the best result with highest accuracy in landslide detection, followed by sub-pixel analysis, and lastly pixel-based approach.</p>
+<p>In terms of study design, authors demonstrated how accuracy evaluation can be implemented in practice. The study explains how to structure a comprehensive research by considering the advantages and limitations of assessment indices. For example, to achieve a balanced evaluation and consider, authors also used F-score to evaluate the effectiveness of classification. In addition, this study emphasised on the strength and limitation of each classification method based on the result and literature review:</p>
+<p><strong><em>Pixel Based</em></strong></p>
+<p>Limitation:</p>
+<ul>
+<li><p>dependent on spectral signature</p></li>
+<li><p>lower detection accuracy due to spectral overlaying effects</p></li>
+<li><p>false identification of speckled noisy result as clusters</p></li>
+<li><p>not desirable for low and medium resolution data due to size of landslide</p></li>
+</ul>
+<p><strong><em>Sub-pixel Based</em></strong></p>
+<p>Strength:</p>
+<ul>
+<li>effective detection from spectral information and masks</li>
+</ul>
+<p>Limitation:</p>
+<ul>
+<li><p>dependent on spectral signature</p></li>
+<li><p>false identification of speckled noisy result as clusters</p></li>
+<li><p>sub-pixel information is hard to retain in resampling, ortho-rectifiation and co-registration</p></li>
+</ul>
+<p><strong><em>Object Based</em></strong></p>
+<p>Strength:</p>
+<ul>
+<li>robust in detecting landslide</li>
+</ul>
+<p>Limitation:</p>
+<ul>
+<li><p>dependent on type, spatial resolution and temporal resolution</p></li>
+<li><p>not desirable for low and medium resolution data</p></li>
+</ul>
+<p>Findings from this study derive same observation with <span class="citation" data-cites="MehmoodMaryam2022RSIC">Mehmood et al. (<a href="references.html#ref-MehmoodMaryam2022RSIC" role="doc-biblioref">2022</a>)</span>, which object based image analysis has better performance than the other 2 types of classification on high resolution image. On the other hand, the summary above shows that although sub-pixel and object based analysis provides a better overall result and accuracy, they do have additional issues to consider during implementation. Using sub-pixel based and object based analysis requires more attention on the preservation of information or feature details, and have more difficulty in ensuring the reproducibility due to the diverse settings and parameter selection.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>From the introduction of image classification in these two weeks, I have a better understanding on the diverse classification techniques, precautions in application and accuracy assessment. After doing literature review on classification techniques, I realise the importance of identifying characteristics, advantage and limitation of each methods, and select approach based on the research topic and datasets. Study by <span class="citation" data-cites="SabaSumbalBahar2022Cops">Saba et al. (<a href="references.html#ref-SabaSumbalBahar2022Cops" role="doc-biblioref">2023</a>)</span> provide a lot of insight on the three types of image classification. Sub-pixel and object based may have a wider application than pixel based considering the abundance of classes from spectral values under fuzzy classifier and the variety of parameters combined respectively, which can significantly contribute to in high resolution analysis. This will be an interesting topic to research on as the performance of each approach may differ between various Geosciences applications, as they each with its limitation in practice.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-MehmoodMaryam2022RSIC" class="csl-entry" role="doc-biblioentry">
+Mehmood, Maryam, Ahsan Shahzad, Bushra Zafar, Amsa Shabbir, and Nouman Ali. 2022. <span>“Remote <span>Sensing Image Classification</span>: <span>A Comprehensive Review</span> and <span>Applications</span>.”</span> Edited by Afaq Ahmad. <em>Mathematical Problems in Engineering</em> 2022 (August): 1–24. <a href="https://doi.org/10.1155/2022/5880959">https://doi.org/10.1155/2022/5880959</a>.
+</div>
+<div id="ref-SabaSumbalBahar2022Cops" class="csl-entry" role="doc-biblioentry">
+Saba, Sumbal Bahar, Muhammad Ali, Syed Ali Turab, Muhammad Waseem, and Shah Faisal. 2023. <span>“Comparison of Pixel, Sub-Pixel and Object-Based Image Analysis Techniques for Co-Seismic Landslides Detection in Seismically Active Area in <span>Lesser Himalaya</span>, <span>Pakistan</span>.”</span> <em>Natural Hazards</em> 115 (3): 2383–98. <a href="https://doi.org/10.1007/s11069-022-05642-y">https://doi.org/10.1007/s11069-022-05642-y</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_6.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6: Classification</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./week_8.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

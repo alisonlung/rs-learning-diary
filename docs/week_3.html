@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CASA0023 Learning Diary - 3&nbsp; Week 3: Correction of Remote Sensing Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./week_4.html" rel="next">
+<link href="./week_2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: Correction of Remote Sensing Data</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CASA0023 Learning Diary</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1: Introduction to Remote Sensing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: Correction of Remote Sensing Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy Application</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5: An Introduction to Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6: Classification</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">3.1</span>  Summary</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="toc-section-number">3.2</span>  Applications</a>
+  <ul class="collapse">
+  <li><a href="#radiometric-processing" id="toc-radiometric-processing" class="nav-link" data-scroll-target="#radiometric-processing"><span class="toc-section-number">3.2.1</span>  Radiometric Processing</a></li>
+  <li><a href="#geometric-processing" id="toc-geometric-processing" class="nav-link" data-scroll-target="#geometric-processing"><span class="toc-section-number">3.2.2</span>  Geometric Processing</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">3.3</span>  Reflection</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: Correction of Remote Sensing Data</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<p>In order to correct possible errors in data acquisition and enhance image features, the geometric and radiometric properties of remote sensing images are handled by data processing system. Summarised by <span class="citation" data-cites="liang_chapter_2020">Liang and Wang (<a href="references.html#ref-liang_chapter_2020" role="doc-biblioref">2020</a>)</span>, the pre-processing tasks are essential before extracting environmental information from data, including radiometric processing and geometric processing.</p>
+<ol type="1">
+<li><p>Radiometric Processing</p>
+<p>In radiometric processing, corrections on data can be applied by radiometric calibration, atmospheric correction and orthorectification correction, while visualisation in image can be optimised by image enhancement and image fusion. Referencing to content in this week and <span class="citation" data-cites="liang_chapter_2020">Liang and Wang (<a href="references.html#ref-liang_chapter_2020" role="doc-biblioref">2020</a>)</span>, approaches in radiometric processing are described below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_3.JPG" class="img-fluid figure-img" width="537"></p>
+<p></p><figcaption class="figure-caption">Flow chart of radiometric processing Source: week 3 content and</figcaption><p></p>
+</figure>
+</div>
+<p>Within image enhancement, various approaches in each category can be performed to enhance spectral features of image. User can adjust how the satellite imagery is presented according to the study design and visual observation. For point operations, contrast enhancement is widely applied to optimise the image contrast and brightness or highlight information in specific DN ranges. To select the appropriate interactive contrast enhancement function, image quality can be assessed by visual observation and image data distribution in histogram through observing the effect of modification <span class="citation" data-cites="doi:https://doi.org/10.1002/9781118724194.ch2">(<a href="references.html#ref-doi:https://doi.org/10.1002/9781118724194.ch2" role="doc-biblioref"><span>“Point Operations (Contrast Enhancement)”</span> 2016</a>)</span>.</p>
+<p>Another enhancement approach is applying filtering with neighbourhood processing. According to <span class="citation" data-cites="doi:https://doi.org/10.1002/9781118724194.ch4"><span>“Filtering and Neighbourhood Processing”</span> (<a href="references.html#ref-doi:https://doi.org/10.1002/9781118724194.ch4" role="doc-biblioref">2016</a>)</span>, possible operations are:</p>
+<ul>
+<li><p>Low pass filters (smoothing): reduce noise in image by removing high frequency information which also degrades image detail. Authors also suggested using edge-preserving filters to minimise the degradation of resolution if needed.</p></li>
+<li><p>High pass filters (edge enhancement): remove low frequency information and enhance features with high frequency , where filtering can be combined with contrast enhancement in point operation to adjust the contrast locally in a neighbourhood.</p></li>
+</ul>
+<p>For correlated multi-variable datasets, principal component analysis is an effective technique, as it can concentrate the maximum information in multi-spectral data into a few uncorrelated principal components. PCA is able to reduce the redundancy in information between bands in multi-spectral data, which redundancy is caused by common image features in topography <span class="citation" data-cites="doi:https://doi.org/10.1002/9781118724194.ch7">(<a href="references.html#ref-doi:https://doi.org/10.1002/9781118724194.ch7" role="doc-biblioref"><span>“Principal Component Analysis”</span> 2016</a>)</span>. Thus, the operation is able to reduce the size of dataset and enable effective image RGB display when using multi-spctral remote sensing image.</p></li>
+<li><p>Geometric Processing</p>
+<p>Image acquired by sensor contains discrepancy with the true spatial properties of landscape, which the distortion can be caused by factors like changes in altitude, attitude and velocity, Earth rotation and curvature, surface relief displacement and perspective projections during image collection <span class="citation" data-cites="liang_chapter_2020">(<a href="references.html#ref-liang_chapter_2020" role="doc-biblioref">Liang and Wang 2020</a>)</span>. The figure below shows how geometric processing can be applied to original imagery for reducing the distortion by using ground control points and estimating RMSE.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_4.JPG" class="img-fluid figure-img" width="526"></p>
+<p></p><figcaption class="figure-caption">Flow chart of geometric processing</figcaption><p></p>
+</figure>
+</div>
+<p><span class="citation" data-cites="doi:https://doi.org/10.1002/9781118724194.ch9"><span>“Image Geometric Operations”</span> (<a href="references.html#ref-doi:https://doi.org/10.1002/9781118724194.ch9" role="doc-biblioref">2016</a>)</span> pointed out that GCP selections is of vital importance for the accuracy and automation of image warping<br>
+co-registration, in which manual and semi-automatic GCP can be greatly affected by human error, causing automatic image co-registration to be more widely applied.</p></li>
+</ol>
+</section>
+<section id="applications" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
+<section id="radiometric-processing" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="radiometric-processing"><span class="header-section-number">3.2.1</span> Radiometric Processing</h3>
+<p>Other than the mentioned general operations, image enhancement can also apply specifically for certain weather condition. <span class="citation" data-cites="kaplan_remote_2018">Kaplan (<a href="references.html#ref-kaplan_remote_2018" role="doc-biblioref">2018</a>)</span> proposed a hazy image model that determines the global airlight and transmission map by using mean and standard deviation of the original image. The proposed model is based on the existing hazy image model, which global airlight and transmission map are variables to be determined for the contrast restoration of weather degraded images. The author compared with former methods, like hybrid dark channel prior, and found out that the proposed enhancement method provides a better enhancement and edge preserving capability among all.This study shows that some of the existing methods may contain limitation that not applicable for specific enhancement purpose, such as the oversatruration or undersaturation problem of histogram equalisation in image enhancement, which can be revised and improved to increase the accuracy of adjustment.</p>
+<p>Recently, researchers are also proposing methods to increase the efficiency in satellite image pre-processing by using machine learning techniques. Acknowledged the extensive computation and deficiency in real time application, <span class="citation" data-cites="sun_automatic_2021">Sun et al. (<a href="references.html#ref-sun_automatic_2021" role="doc-biblioref">2021</a>)</span> proposed using time-dependent deep neural network for automatic atmospheric correction and target detection. The study is based on the advantage of remote sensing (frequent, reliable and large area data) and aimed at producing a network that study all atmospheric characteristics that affect the observed total radiance. Thus, other than total radiance map, the network also requires inputs about collection day of the year and time of the day, which considers the seasonal and diurnal variability of atmosphere and their impact on incoming solar radiation and atmospheric conditions <span class="citation" data-cites="sun_automatic_2021">(<a href="references.html#ref-sun_automatic_2021" role="doc-biblioref">Sun et al. 2021</a>)</span>. Although the application of this network is limited due to the intensive time and cost in collecting ground truth measurements, the research presented how image processing in remote sensing can be improved with state-of-art technologies by showing its potential in integrating with deep learning based approach in atmospheric correction tasks.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_5.JPG" class="img-fluid figure-img" width="332"></p>
+<p></p><figcaption class="figure-caption">Proposed deep learning solution for atmospheric correction</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="geometric-processing" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="geometric-processing"><span class="header-section-number">3.2.2</span> Geometric Processing</h3>
+<p>With reference to previous studies on the influence of geometric correction on the accuracy of atmospheric correction algorithm at dark pixels and water-leaving radiance, <span class="citation" data-cites="doi:10.1080/2150704X.2020.1847350">Li and Xia (<a href="references.html#ref-doi:10.1080/2150704X.2020.1847350" role="doc-biblioref">2021</a>)</span> analysed the influence for three surface waterbodies of different water quality class through calculating errors with ground object spectrometer measurement and analyse water reflectance by geometric correction.The result revealed that geometric correction exerts a certain degree of influence on reflectance value of atmospheric corrected image, but has small influence on overall trend. This study demonstrated how operation of geometric processing can has possible influence on the accuracy of result data and should be performed carefully when establishing GCPs. Apart from adopting automatic GCP selection, user should ensure the RMSE is minimised and under the threshold to ensure the overall accuracy. However, as the research design only involved a small sample size and collection of in-situ data may contain systematic error, conclusion retrieved from this study may need further study and verification.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<p>This week generally covers the methods and operations in pre-processing of remote sensing imagery data. Image enhancement is one of the interesting parts in this week content as there is many flexibility in selecting the enhancement approach. With many methods developed in image enhancement, methods can be selected based on the project scale, objective and requirement of following analysis, and apply cooperatively with other enhancement operations. For example, for study that investigate topographic features, high pass filter can be applied with contrast enhancement to optimise the visualisation in local pixels. In addition, PCA is an effective technique that can be explore more on, especially for project with large dataset that has more redundancy in multi-spectral imageries. For future studies, automation in correction is possible aspect to develop, such as the automatic atmospheric correction proposed by <span class="citation" data-cites="sun_automatic_2021">Sun et al. (<a href="references.html#ref-sun_automatic_2021" role="doc-biblioref">2021</a>)</span>. Although “analysis ready data” is available that benefit studies like time-series analysis and reduce cost for image pre-processing in general, future study on automatic correction is still vital for platform that doesn’t provide ARD.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-doi:https://doi.org/10.1002/9781118724194.ch4" class="csl-entry" role="doc-biblioentry">
+<span>“Filtering and Neighbourhood Processing.”</span> 2016. In <em>Image <span>Processing</span> and <span>GIS</span> for <span>Remote Sensing</span></em>, by Jian Guo Liu and Philippa J. Mason, 35–53. <span>Chichester, UK</span>: <span>John Wiley &amp; Sons, Ltd</span>. <a href="https://doi.org/10.1002/9781118724194.ch4">https://doi.org/10.1002/9781118724194.ch4</a>.
+</div>
+<div id="ref-doi:https://doi.org/10.1002/9781118724194.ch9" class="csl-entry" role="doc-biblioentry">
+<span>“Image Geometric Operations.”</span> 2016. In <em>Image <span>Processing</span> and <span>GIS</span> for <span>Remote Sensing</span></em>, by Jian Guo Liu and Philippa J. Mason, 103–11. <span>Chichester, UK</span>: <span>John Wiley &amp; Sons, Ltd</span>. <a href="https://doi.org/10.1002/9781118724194.ch9">https://doi.org/10.1002/9781118724194.ch9</a>.
+</div>
+<div id="ref-kaplan_remote_2018" class="csl-entry" role="doc-biblioentry">
+Kaplan, N. H. 2018. <span>“Remote Sensing Image Enhancement Using Hazy Image Model.”</span> <em>Optik</em> 155: 139–48. <a href="https://doi.org/10.1016/j.ijleo.2017.10.132">https://doi.org/10.1016/j.ijleo.2017.10.132</a>.
+</div>
+<div id="ref-doi:10.1080/2150704X.2020.1847350" class="csl-entry" role="doc-biblioentry">
+Li, Aimin, and Guangping Xia. 2021. <span>“The Influence of Geometric Correction on the Accuracy of the Extraction of the Remote Sensing Reflectance of Water.”</span> <em>International Journal of Remote Sensing</em> 42 (6): 2280–91. <a href="https://doi.org/10.1080/2150704X.2020.1847350">https://doi.org/10.1080/2150704X.2020.1847350</a>.
+</div>
+<div id="ref-liang_chapter_2020" class="csl-entry" role="doc-biblioentry">
+Liang, Shunlin, and Jindi Wang, eds. 2020. <span>“Chapter 1 - <span>A</span> Systematic View of Remote Sensing.”</span> In <em>Advanced Remote Sensing (Second Edition)</em>, Second Edition, 1–57. <span>Academic Press</span>. <a href="https://doi.org/10.1016/B978-0-12-815826-5.00001-5">https://doi.org/10.1016/B978-0-12-815826-5.00001-5</a>.
+</div>
+<div id="ref-doi:https://doi.org/10.1002/9781118724194.ch2" class="csl-entry" role="doc-biblioentry">
+<span>“Point Operations (Contrast Enhancement).”</span> 2016. In <em>Image <span>Processing</span> and <span>GIS</span> for <span>Remote Sensing</span></em>, by Jian Guo Liu and Philippa J. Mason, 9–19. <span>Chichester, UK</span>: <span>John Wiley &amp; Sons, Ltd</span>. <a href="https://doi.org/10.1002/9781118724194.ch2">https://doi.org/10.1002/9781118724194.ch2</a>.
+</div>
+<div id="ref-doi:https://doi.org/10.1002/9781118724194.ch7" class="csl-entry" role="doc-biblioentry">
+<span>“Principal Component Analysis.”</span> 2016. In <em>Image <span>Processing</span> and <span>GIS</span> for <span>Remote Sensing</span></em>, by Jian Guo Liu and Philippa J. Mason, 77–89. <span>Chichester, UK</span>: <span>John Wiley &amp; Sons, Ltd</span>. <a href="https://doi.org/10.1002/9781118724194.ch7">https://doi.org/10.1002/9781118724194.ch7</a>.
+</div>
+<div id="ref-sun_automatic_2021" class="csl-entry" role="doc-biblioentry">
+Sun, Jian, Fangcao Xu, Guido Cervone, Melissa Gervais, Christelle Wauthier, and Mark Salvador. 2021. <span>“Automatic Atmospheric Correction for Shortwave Hyperspectral Remote Sensing Data Using a Time-Dependent Deep Neural Network.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 174: 117–31. <a href="https://doi.org/10.1016/j.isprsjprs.2021.02.007">https://doi.org/10.1016/j.isprsjprs.2021.02.007</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./week_4.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy Application</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CASA0023 Learning Diary - 5&nbsp; Week 5: An Introduction to Google Earth Engine</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./week_6.html" rel="next">
+<link href="./week_4.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5: An Introduction to Google Earth Engine</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CASA0023 Learning Diary</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1: Introduction to Remote Sensing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: Correction of Remote Sensing Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy Application</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_5.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5: An Introduction to Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6: Classification</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">5.1</span>  Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">5.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">5.3</span>  Reflection</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5: An Introduction to Google Earth Engine</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<p>In remote sensing analysis, Google Earth Engine (GEE) presents advantage in providing a large collection of satellite image with uniform projection (EPSG: 3857). Instead of downloading images from external websites and process it in software, GEE allows import of image collections with dates and region filter, pre-processing and analysis on the same platform collectively. In addition, GEE provides a variety of geometries and features for geometry operations, such as allowing image clipping with shapefile. In application, many functions are also available to manage data for analysis, including image reduction, texture measurement and principal components transform. A question that I have regarding image reduction is will the compress of data generalise information and causing the loss of information.</p>
+<p>GEE as a cloud computing geospatial tool benefits the community by its high accessibility of data and user-friendly interface for interactive data and algorithm development. The open source use caters the general public by reducing the necessity of using computer with large processing powers and software in remote sensing analysis, which increase the equality of undertaking geospatial research in different nations <span class="citation" data-cites="MutangaOnisimo2019GEEA">(<a href="references.html#ref-MutangaOnisimo2019GEEA" role="doc-biblioref">Mutanga and Kumar 2019</a>)</span>. In overall, <span class="citation" data-cites="ZhaoQiang2021PaTi">Zhao et al. (<a href="references.html#ref-ZhaoQiang2021PaTi" role="doc-biblioref">2021</a>)</span> analysed the potential of GEE by its advantages and limitations:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_8.JPG" class="img-fluid figure-img" width="323"></p>
+<p></p><figcaption class="figure-caption">Advantages and limitation of GEE</figcaption><p></p>
+</figure>
+</div>
+<p>Despite having these limitation, GEE still able to provide sufficient collection of medium to low resolution data and support a majority of geospatial analysis. Therefore, this freely accessible platform will definitely assists future studies with its advantages.</p>
+</section>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+<p>Research by <span class="citation" data-cites="MutangaOnisimo2019GEEA">Mutanga and Kumar (<a href="references.html#ref-MutangaOnisimo2019GEEA" role="doc-biblioref">2019</a>)</span> summarised the contribution of GEE in four main themes: vegetation mapping and monitoring, landcover mapping, agricultural applications and disaster management and earth sciences. Based on the referenced articles, authors summarised that GEE is able to process huge data sets for applications in various spatial and temporal scales, while allowing the implement of automated programs at an operational level. This section will discuss the application of GEE in other themes:</p>
+<ol type="1">
+<li><p>Archaeology Study</p>
+<p><span class="citation" data-cites="LasaponaraRosa2022OtUo">Lasaponara, Abate, and Masini (<a href="references.html#ref-LasaponaraRosa2022OtUo" role="doc-biblioref">2022</a>)</span> applied GEE to support the visual interpretation of archaeological features by Sentinel satellite imagery for the lost section on the ancient Via Appia. The major difficulty in features recognition is the archaeological proxy indicators are subtle and easily attenuate due to factors like presence of microreliefs, moisture patterns and atmospheric contamination. As the features only evident in specific surface condition, authors proposed the use of multitemporal data processing with image enhancement and data reduction to capture the spatial and temporal changes of the scale and distribution of indicators <span class="citation" data-cites="LasaponaraRosa2022OtUo">(<a href="references.html#ref-LasaponaraRosa2022OtUo" role="doc-biblioref">Lasaponara, Abate, and Masini 2022</a>)</span>. The method addressed the issue in identifying the deviation on Via Appia due to the existing modern road system, showing the potential of using GEE to process earth observation imagery in archaeology. In this study, GEE was able to calculate spectral signature over a large time span without requiring a high-levle hardware, which is also applicable for studying cultural properties with different characteristics and geographical location. Yet, the lack of high resolution image collections in GEE may limit the degree of visual interpretation in archaeology study and may not be the most effective approach for indicators with low visibility.</p></li>
+<li><p>Settlement Mapping</p>
+<p>The recent study by <span class="citation" data-cites="MatariraDadirai2022GEEf">Matarira, Mutanga, and Naidu (<a href="references.html#ref-MatariraDadirai2022GEEf" role="doc-biblioref">2022</a>)</span> implemented the cloud-based computing techniques in GEE to interpret the morphologically varied informal settlements by spectral and textural information in Durban, Sourth Africa. The paper used spectral bands, spectral indices and texture features from Sentinel 2A imagery as the input of random forest classification, in which textural features is calculated by the GLCM algorithm in ENVI software.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_9.JPG" class="img-fluid figure-img" width="364"></p>
+<p></p><figcaption class="figure-caption">Research workflow for studying settlements in Durban</figcaption><p></p>
+</figure>
+</div>
+<p>Reviewing the successful application for informal settlement mapping in GEE, <span class="citation" data-cites="MatariraDadirai2022GEEf">Matarira, Mutanga, and Naidu (<a href="references.html#ref-MatariraDadirai2022GEEf" role="doc-biblioref">2022</a>)</span> pointed out that the characteristics of simplified access and process of satellite data, versatility and adaptability of platform, and efficiency in performing pixel-based classification improves urban area mapping from traditional static, product-based approach. This study demonstrates the ability of GEE in handling large dataset and performing more advance analysis like random forest classification. It shows how the bulk of processing and analysis of remote sensing imagery can be performed collectively in GEE to increase the efficiency in script writing. For the GLCM textural features, a possible improvement for the research workflow is using the ee.Image.glcmTexture function in GEE instead of estimating GLCM texture features with ENVI, which simplify the procedures by minimising the transition between platforms.</p>
+</section>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<p>In this week’s content, the concept of image reduction is interesting to me because it provides various alternatives in reducing collection to a single image and will be useful for study with temporal information. The supporting material (Geo for Good 2022) in practical provided insight for the approach of handling temporal context, such as normalising statistics by taking percentile and separating seasonal composite for phenology study. It shows how we can flexibly apply functions according to the suitability with research purpose. The provision of comprehensive platform, adequate medium resolution image collections and variety of functions makes GEE an outstanding alternative for processing of remote sensing imagery. Using GEE centralise all processes in the same platform and increase the reproducibility of study, which is applicable for future study and analysis.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-LasaponaraRosa2022OtUo" class="csl-entry" role="doc-biblioentry">
+Lasaponara, Rosa, Nicodemo Abate, and Nicola Masini. 2022. <span>“On the <span>Use</span> of <span>Google Earth Engine</span> and <span>Sentinel Data</span> to <span>Detect</span> <span>‘<span>Lost</span>’</span> <span>Sections</span> of <span>Ancient Roads</span>. <span>The Case</span> of <span>Via Appia</span>.”</span> <em>IEEE Geoscience and Remote Sensing Letters</em> 19: 1–5. <a href="https://doi.org/10.1109/LGRS.2021.3054168">https://doi.org/10.1109/LGRS.2021.3054168</a>.
+</div>
+<div id="ref-MatariraDadirai2022GEEf" class="csl-entry" role="doc-biblioentry">
+Matarira, Dadirai, Onisimo Mutanga, and Maheshvari Naidu. 2022. <span>“Google <span>Earth Engine</span> for <span>Informal Settlement Mapping</span>: <span>A Random Forest Classification Using Spectral</span> and <span>Textural Information</span>.”</span> <em>Remote Sensing</em> 14 (20): 5130. <a href="https://doi.org/10.3390/rs14205130">https://doi.org/10.3390/rs14205130</a>.
+</div>
+<div id="ref-MutangaOnisimo2019GEEA" class="csl-entry" role="doc-biblioentry">
+Mutanga, Onisimo, and Lalit Kumar. 2019. <span>“Google <span>Earth Engine Applications</span>.”</span> <em>Remote Sensing</em> 11 (5): 591. <a href="https://doi.org/10.3390/rs11050591">https://doi.org/10.3390/rs11050591</a>.
+</div>
+<div id="ref-ZhaoQiang2021PaTi" class="csl-entry" role="doc-biblioentry">
+Zhao, Qiang, Le Yu, Xuecao Li, Dailiang Peng, Yongguang Zhang, and Peng Gong. 2021. <span>“Progress and <span>Trends</span> in the <span>Application</span> of <span>Google Earth</span> and <span>Google Earth Engine</span>.”</span> <em>Remote Sensing</em> 13 (18): 3778. <a href="https://doi.org/10.3390/rs13183778">https://doi.org/10.3390/rs13183778</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_4.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy Application</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./week_6.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6: Classification</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

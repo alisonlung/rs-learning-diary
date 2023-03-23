@@ -5,7 +5,7 @@ project:
 book:
   title: "CASA0023 Learning Diary"
   author: "Yuet Yung Lung (22082423)"
-  date: "26/1/2023"
+  date: "24/03/2023"
   chapters:
     - index.qmd
     - week_1.qmd

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CASA0023 Learning Diary - 8&nbsp; Week 8: Temperature and Policy</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./week_7.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CASA0023 Learning Diary</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1: Introduction to Remote Sensing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: Correction of Remote Sensing Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy Application</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5: An Introduction to Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6: Classification</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">8.1</span>  Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">8.2</span>  Application</a>
+  <ul class="collapse">
+  <li><a href="#urban-heat-islands-vulnerability-assessment" id="toc-urban-heat-islands-vulnerability-assessment" class="nav-link" data-scroll-target="#urban-heat-islands-vulnerability-assessment"><span class="toc-section-number">8.2.1</span>  Urban Heat Island’s Vulnerability Assessment</a></li>
+  <li><a href="#urban-life-cycle-assessment" id="toc-urban-life-cycle-assessment" class="nav-link" data-scroll-target="#urban-life-cycle-assessment"><span class="toc-section-number">8.2.2</span>  Urban Life Cycle Assessment</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">8.3</span>  Reflection</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8: Temperature and Policy</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
+<p>This week focused on urban heat island (UHI) effect to study how it is targeted in global policies and local policies. Urban heat island effect is a phenomenon where urban area retain more heat than sub-urban/ rural area due to urban design and density, causing a higher atmospheric and surface temperature in urban areas. The key factors of urban heat island effect are urbanisation, increasing manufactured materials and increasing heating and cooling energy needs, which the relationship is shown in the figure below <span class="citation" data-cites="MohajeraniAbbas2017Tuhi">(<a href="references.html#ref-MohajeraniAbbas2017Tuhi" role="doc-biblioref">Mohajerani, Bakaric, and Jeffrey-Bailey 2017</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_16.JPG" class="img-fluid figure-img" width="467"></p>
+<p></p><figcaption class="figure-caption">Relationship between UHI and key factors <span class="citation" data-cites="MohajeraniAbbas2017Tuhi">(<a href="references.html#ref-MohajeraniAbbas2017Tuhi" role="doc-biblioref">Mohajerani, Bakaric, and Jeffrey-Bailey 2017</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>In the view of the social, environmental and economic impact of UHI, global and local policies are proposed and implemented to ease the UHI effect, while promoting sustainability in urban planning and design. The following table concluded the examples of policies explained in class:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_17.JPG" class="img-fluid figure-img" width="582"></p>
+</figure>
+</div>
+<p>The examples above demonstrate a common problem that no specific methodology and way of implementation are given. Rethinking on how an effective planning can be proposed, some considerations for policy making on UHI effect are discussed with case studies:</p>
+<p><em>1. Selected Methodology and Data</em></p>
+<p>Environmental issue should be investigated with a correct approach and dataset. An example is the evaluation of implementing landscape cooling methods (e.g.&nbsp;surface coating, cool roads) by analysing air and surface temperature, which study revealed that there is no significant relationship and effectiveness in between. Evaluation should be done with the right matrices and provide justification on the selected approach.</p>
+<p><em>2. Disparities in City</em></p>
+<p>Policies should consider how neighbourhoods are designed as not all areas in have equal access to cooler spaces. These disparities are related to the previous planning, development and maintenance of communities, especially for places that have housing segregation, causing an unequal scene in accessing cooler space, like the green space. Example shown in class is the formerly redlined areas in Portland.</p>
+<p><em>3. Application of Data</em></p>
+<p>Although applying EO data to inform the cooling strategy, the Fremantle’s Urban Forest Plan failed to comprehensively identify location that requires cooling. The data analysis they did was relied on single temperature image with aggregation, which ignored the data trend and reduce the reproducibility of strategy. In this case, the analysis did not provide sufficient data and handle the data correctly, causing a misleading result and interpretation.</p>
+<p><em>4. Effectiveness of Planning Requirements</em></p>
+<p>Despite detailed statistical requirements in greening strategy are provided, the policy in Perth Metropolitan Area and Singapore failed to specifically define the arrangement conditions, such as providing definition of open space and indicating the requirement on placement. Thus, when designing an approach in policy/ plan, one should consider how resources are eqaully and equitably distributed to ensure the strategy is sustainable.</p>
+</section>
+<section id="application" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> Application</h2>
+<p>Many studies proposed various methodology to integrate urban planning policies for mitigating UHI effect. This section will present some assessment method that monitor UHI in local-level policies, and analyse the effectiveness comparing to case studies in lecture.</p>
+<section id="urban-heat-islands-vulnerability-assessment" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="urban-heat-islands-vulnerability-assessment"><span class="header-section-number">8.2.1</span> Urban Heat Island’s Vulnerability Assessment</h3>
+<p>A methodology for assessing UHI vulnerability is proposed by <span class="citation" data-cites="TécherMagalie2023UHIV">Técher, Ait Haddou, and Aguejdad (<a href="references.html#ref-TécherMagalie2023UHIV" role="doc-biblioref">2023</a>)</span> to identify prone area with high vulnerability . A total of 15 input indicators are developed from vulnerability studies and generate urban vulnerability map based on 3 components: 1. <em>Urban planning policies</em>: green spaces, building footprint, building height, construction’s location &amp; air conditioning 2. <em>Exposure to urban overheating</em>: topography, proximity to natural areas, SUHI intensity, population density &amp; land uses (daytime &amp; nightime) 3. <em>Sensitivity to urban overheating</em>: sensitive population, heath and care facilities, low-income households &amp; building age These indicators are weighted by explicit weights in calculation and the dimensionality of combined output is reduced by principal component analysis.</p>
+<p>Authors adopted the UHI vulnerability assessment scheme in the Mediterranean city of Montpellier context to reveal that the most vulnerable zones are distributed close to urban centers and analysis the composition of landuse, footprint, planted space and air conditioning in these zone.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Capture_18.JPG" class="img-fluid figure-img" width="473"></p>
+<p></p><figcaption class="figure-caption">Framework of assessment scheme</figcaption><p></p>
+</figure>
+</div>
+<p>The proposed framework is comprehensively built by considering various input data to analysis the UHI effect. This study shows a lot of effort in literature review for the design of framework, especially where indicators of each component are clearly defined with parameter settings and justification on effects of UHI vulnerability based on relevant literature. The source of data, processing and matrices are also transparently presented, leading to a high reproducibility in future implementation and improvement. Comparing to examples in class, this assessment scheme provides a clear planning requirement (e.g.&nbsp;clear definition of urban vulnerability levels), approach that has justified relationship with UHI and framework with diverse considerations (e.g. socio-economic, topological, demographic aspects). Based on this assessment, policy makers can identify spatial pattern in generic scale, and specifically analysis according to different indicators.</p>
+</section>
+<section id="urban-life-cycle-assessment" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="urban-life-cycle-assessment"><span class="header-section-number">8.2.2</span> Urban Life Cycle Assessment</h3>
+<p><span class="citation" data-cites="SuscaTiziana2020Hiei">Susca and Pomponi (<a href="references.html#ref-SuscaTiziana2020Hiei" role="doc-biblioref">2020</a>)</span> suggested a pathway to expand the current life cycle assessment (LCA) framework from only capturing the complexity and impact of urban settlement, to including interactions between built environment and local climate, which enables effective policy making for UHI effects. Referencing LCA studies that focused on UHI mitigation, authors proposed that UHI can be included in methodology by either simulating the interactions between built environment and local climate by physics-based model, or statistically and spatially aggregate relevant mathematical model, which characterisation factors for smog, water quality resources and human health can be inputted to the LCA methodology.</p>
+<p>Similar to the research above, this study also justify the approach design and factor selection by reviewing published literature. Authors suggested potential indicators that can be integrated to LCA for evaluating UHI-mitigation measures. Applying this expanded urban LCA in policy making may able to justify the selected methodology/ factors by literature. However, the expanded framework has shortcomings in the diversity of factors that it considered and the statistics/ mathematical calculation it provided is based on specific region/ case study, causing a limit direct application of proposed methodology, as urban settlements is different city are unique in structure. Therefore, reviewing the consideration of policy making mentioned this week, this assessment framework may have deficency in showing the disparities in cities.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<p>This week’s content is interesting for me as case studies from different countries are discussed through analysing the objective, background and methodology of local UHI mitigating policies. The lecture content guide us through the evaluation of policy’s effectiveness by showing how policy can have shortcomings in its framework and design. The redlining example in America in particular brings up a lot of consideration in policy making, which emphasis how the history and background of urban planning can highly impact the equality between neighbourhoods, such as the inequality of accessing green space which the quantity and quality of urban green space may varies between places.</p>
+<p>An important idea I retried from this week content is literature review acts as an important role when structuring framework for policy. Other than providing insight on how the current system is formed based on historical record, it also assist the justification of definitions, methodology by previous literature and risk evaluation on approach. Therefore, in future applications, I have a better idea on how I should approach an issue/ project that involve policies, and how I can evaluate a policy critically.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-MohajeraniAbbas2017Tuhi" class="csl-entry" role="doc-biblioentry">
+Mohajerani, Abbas, Jason Bakaric, and Tristan Jeffrey-Bailey. 2017. <span>“The Urban Heat Island Effect, Its Causes, and Mitigation, with Reference to the Thermal Properties of Asphalt Concrete.”</span> <em>Journal of Environmental Management</em> 197: 522–38. <a href="https://doi.org/10.1016/j.jenvman.2017.03.095">https://doi.org/10.1016/j.jenvman.2017.03.095</a>.
+</div>
+<div id="ref-SuscaTiziana2020Hiei" class="csl-entry" role="doc-biblioentry">
+Susca, Tiziana, and Francesco Pomponi. 2020. <span>“Heat Island Effects in Urban Life Cycle Assessment: <span>Novel</span> Insights to Include the Effects of the Urban Heat Island and <span>UHI</span>‐mitigation Measures in <span>LCA</span> for Effective Policy Making.”</span> <em>Journal of Industrial Ecology</em> 24 (2): 410–23. <a href="https://doi.org/10.1111/jiec.12980">https://doi.org/10.1111/jiec.12980</a>.
+</div>
+<div id="ref-TécherMagalie2023UHIV" class="csl-entry" role="doc-biblioentry">
+Técher, Magalie, Hassan Ait Haddou, and Rahim Aguejdad. 2023. <span>“Urban <span>Heat Island</span>’s <span>Vulnerability Assessment</span> by <span>Integrating Urban Planning Policies</span>: <span>A Case Study</span> of <span>Montpellier Méditerranée Metropolitan Area</span>, <span>France</span>.”</span> <em>Sustainability</em> 15 (3): 1820. <a href="https://doi.org/10.3390/su15031820">https://doi.org/10.3390/su15031820</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_7.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification The Big Questions and Accuracy</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
