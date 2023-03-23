@@ -18,7 +18,15 @@ Recent research focuses on the use of machine learning/ expert systems or hybrid
 
 Apart from considering the type of techniques to apply, user also needs to decide between pixel-based, object-based and scene-based classification methods. @MehmoodMaryam2022RSIC point out that as the spatial resolution of remote sensing images has drastically increased, the popularity of using pixel-based has reduced and research trends changes towards applying object-based classification.
 
-In practical, supervised classifier (CART and random forest) are attempted in three different scenarios, where: 1. Training CART classifier without specifying % of training data 2. Training random forest classifier with specifying % of training data 3. Training random forest classifier with specifying % of training data and greater amount of polygons The questions I have for this practice is regarding the pre-processing of EO data and presentation of output. To improve the filtering result of cloud mask, I tried the median approach for taking only the middle value of each pixel. Although this approach can remove clouds due to its high reflectiveness, information in pixels will be generalised and causing lost of a lot of data. Alternatively, more advanced cloud detection or filtering cloud percentage in data source may be more effective to ensure the exclusion of clouds while retaining most information.
+In practical, supervised classifier (CART and random forest) are attempted in three different scenarios, where:
+
+1\. Training CART classifier without specifying % of training data
+
+2\. Training random forest classifier with specifying % of training data
+
+3\. Training random forest classifier with specifying % of training data and greater amount of polygons
+
+The questions I have for this practice is regarding the pre-processing of EO data and presentation of output. To improve the filtering result of cloud mask, I tried the median approach for taking only the middle value of each pixel. Although this approach can remove clouds due to its high reflectiveness, information in pixels will be generalised and causing lost of a lot of data. Alternatively, more advanced cloud detection or filtering cloud percentage in data source may be more effective to ensure the exclusion of clouds while retaining most information.
 
 For my analysis of Hong Kong, I also experienced that the clipped image from FAO GAUL global admin layers may not completely display part of the area. Problem occurs at Chek Lap Kok International Airport where a portion was clipped away. An alternative is to use boundary shapefile from official data source or carefully select an appropriate dataset from catalog.
 
