@@ -12,7 +12,7 @@ Remote sensing provides an approach to collect, store and extract environmental 
 
     The resolution of imagery can be analysed in spatial, spectral, temporal and radiometric aspects, which is determined by the specification of platform and sensors. @liang_chapter_2020 provided a detailed summary for characteristics of commonly used satellite sensor:
 
-![Resolution of commonly used satellite sensor [@liang_chapter_2020]](img/Capture.JPG){fig-align="center" width="371"}
+![Resolution of commonly used satellite sensor [@liang_chapter_2020]](img/Capture.JPG){fig-align="center" width="464"}
 
 3.  *Data format*
 
@@ -24,9 +24,9 @@ This week's practical explores on the data acquisition, pre-processing and basic
 
 Having comprehensive data source with various resolutions, remote sensing is widely applied in geospatial and environmental studies. According to @liang_chapter_2020, application of remote sensing can be categorized into 4 main categories:
 
-![Application of remote sensing product [@liang_chapter_2020]](img/Capture_1.JPG){fig-align="center" width="322"}
+![Application of remote sensing product [@liang_chapter_2020]](img/Capture_1.JPG){fig-align="center" width="406"}
 
-Definition of each category is summarised below with related study as example.
+This section will based on the category defined by @liang_chapter_2020 and provide definition with related study as example.
 
 1.  *Detection and Monitoring*
 
@@ -50,7 +50,7 @@ Definition of each category is summarised below with related study as example.
 
     Research Example:
 
-    Crop coefficient can be predicted from fraction of ground cover and vegetation height by using ground data and remote sensing, where remote sensing vegetation indices can also be used to validate the computation of parameters for maize, barley and olives [@pereira_prediction_2020].
+    Crop coefficient can be predicted from fraction of ground cover and vegetation height by using ground data and remote sensing, where remote sensing vegetation indices can also be used to validate the computation of parameters for maize, barley and olives [@pereira_prediction_2020]. This study shows how remote sensing data can be flexibly applied for monitoring and validation purpose simultaneously.
 
 4.  *Data assimilation into numerical models*
 
@@ -58,10 +58,12 @@ Definition of each category is summarised below with related study as example.
 
     Research Example:
 
-    @Nair2022 introduced how remote sensing data in data assimilation to improve initial estimates for hydrollogical and atmospheric modelling, such as providing soil moisture data at unprecedented spatiotemporal resolutions across different scale for streamflow simulation, which can be complemented with in-situ surface and root zone observations for the calibration of model parameters.
+    @Nair2022 introduced how remote sensing data can be applied in data assimilation to improve initial estimates for hydrollogical and atmospheric modelling, such as providing soil moisture data at unprecedented spatiotemporal resolutions across different scale for streamflow simulation, which can be complemented with in-situ surface and root zone observations for the calibration of model parameters.
 
-These 4 categories effectively provide an insight on the diverse application of remote sensing data, from solely apply for detection, operation of numerical models and validation of models, to using incorporately for estimation of model parameters. The research examples showed that with utilisation of band features can provide estimation through band composition and indices, thus increase the possibility of applying remote sensing imagery with different numerical models. Study by @randin_monitoring_2020 also demonstrated that user can take advantage of the temporal resolution of remote sensing to obtain long-term series data for testing the temporal transferability of model.
+These 4 categories effectively provide an insight on the diverse application of remote sensing data, from solely apply for detection, operation of numerical models and validation of models, to using incorporately for estimation of model parameters. The research examples showed that the utilisation of band features can provide estimation through band composition and indices, thus increase the possibility of applying remote sensing imagery with different numerical models. Study by @randin_monitoring_2020 also demonstrated that user can take advantage of the temporal resolution of remote sensing to obtain long-term series data for testing the temporal transferability of model.
 
 ## Reflection
 
-Content in week 1 provides an overview on how data from different platforms can be processed and manipulated to study the spectral significance of ground features. The part that I found interesting is the application of tasseled cap transformation in the study of image statistics. The transformation integrates original image data to new coordinate system by formulating brightness, greenness, wetness according to the spectral signature in bands. Band math increase the range of application of remote sensing data, which is also reflected in the research examples for calculation of indices and coefficients. From previous section, I also had a better understanding on how utilisation of data characteristics can lead to a wider application in different study areas, such as applying time series data to increase transferability in monitoring of changes. The advancement of remote sensing platforms will provide data with better resolution, and further enhance the flexibility of study in different scale and model application.
+Content in week 1 provides an overview on how data from different platforms can be processed and manipulated to study the spectral significance of ground features. The part that I found interesting is the application of tasseled cap transformation in the study of image statistics. The transformation integrates original image data to new coordinate system by formulating brightness, greenness, wetness according to the spectral signature in bands. Band math increase the range of application of remote sensing data, which is also reflected in the research examples for calculation of indices and coefficients. From previous section, I also had a better understanding on how utilisation of data characteristics can lead to a wider application in different study areas, such as applying time series data to increase transferability in monitoring of changes.
+
+Moreover, the advancement of remote sensing platforms will provide data with better resolution, and further enhance the flexibility of study in different scale and model application. Considering the flexibility in application, I think remote sensing will be helpful for various analysis and monitoring with its growing potential, especially when products in different format (public/ commercial) and standards (frequency, spatial & temporal resolution) are offered by many space agencies. I am excited to explore more methodologies in applying EO data in the upcoming weeks!

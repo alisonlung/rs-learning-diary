@@ -175,10 +175,7 @@ div.csl-indent {
    
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">7.1</span>  Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">7.2</span>  Application</a>
-  <ul class="collapse">
-  <li><a href="#comparison-between-3-types-of-classification" id="toc-comparison-between-3-types-of-classification" class="nav-link" data-scroll-target="#comparison-between-3-types-of-classification"><span class="toc-section-number">7.2.1</span>  Comparison between 3 types of classification</a></li>
-  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">7.2</span>  Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7.3</span>  Reflection</a></li>
   </ul>
 </nav>
@@ -208,7 +205,7 @@ div.csl-indent {
 <p>Continuing the content in week 6, this week’s lecture further introduced object based image analysis and sub pixel analysis, then discussed the accuracy assessment in remote sensing classification. Object based image analysis is based on the identification of homogeneity and heterogeneity of cells for generating superpixel, while sub pixel analysis consider fraction that makeup an individual pixel to identify the proportion of landcover by spectral mixture analysis. Table below summarised the characteristics, techniques and required input of pixel based, sub-pixel-based and object based image analysis covered in week 6 &amp; 7.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Capture_14.JPG" class="img-fluid figure-img" width="609"></p>
+<p><img src="img/Capture_14.JPG" class="img-fluid figure-img" width="688"></p>
 <p></p><figcaption class="figure-caption">Summary of pixel, sub-pixel and object image analysis</figcaption><p></p>
 </figure>
 </div>
@@ -216,7 +213,7 @@ div.csl-indent {
 <p>In general, accuracy assessment in machine learning can be achieved through confusion matrix, kappa coefficient, F1-score and Receiver Operating Characteristic Curve.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Capture_15.JPG" class="img-fluid figure-img" width="586"></p>
+<p><img src="img/Capture_15.JPG" class="img-fluid figure-img" width="676"></p>
 <p></p><figcaption class="figure-caption">Accuracy assessment in machine learning</figcaption><p></p>
 </figure>
 </div>
@@ -243,10 +240,9 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
-<section id="comparison-between-3-types-of-classification" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="comparison-between-3-types-of-classification"><span class="header-section-number">7.2.1</span> Comparison between 3 types of classification</h3>
+<p><strong>Comparison between 3 types of classification</strong></p>
 <p>Under the provision of high resolution satellite image, there is an increasing popularity in applying object-based classification and numerous research compare how pixel-based and object-based perform in different research themes. Recent study by <span class="citation" data-cites="SabaSumbalBahar2022Cops">Saba et al. (<a href="references.html#ref-SabaSumbalBahar2022Cops" role="doc-biblioref">2023</a>)</span> compared pixel, sub-pixel and object-based image analysis techniques for landslides detection in Lesser Himalaya. Authors applied pixel-based maximum likelihood classifier, sub-pixel analysis with sine cardinal and object-based analysis with image segmentation on high resolution satellite images obtained by different sensor, while accuracy was examined by binary confusion matrix, kappa coefficient and F-score. Result from this study presented that object-based image classification retrieved the best result with highest accuracy in landslide detection, followed by sub-pixel analysis, and lastly pixel-based approach.</p>
-<p>In terms of study design, authors demonstrated how accuracy evaluation can be implemented in practice. The study explains how to structure a comprehensive research by considering the advantages and limitations of assessment indices. For example, to achieve a balanced evaluation and consider, authors also used F-score to evaluate the effectiveness of classification. In addition, this study emphasised on the strength and limitation of each classification method based on the result and literature review:</p>
+<p>In terms of study design, authors demonstrated how accuracy evaluation can be implemented in practice. The study explains how to structure a comprehensive research by considering the advantages and limitations of assessment indices. For example, to achieve a balanced evaluation and consideration, authors also used F-score to evaluate the effectiveness of classification. In addition, this study emphasised on the strength and limitation of each classification method based on the result and literature review:</p>
 <p><strong><em>Pixel Based</em></strong></p>
 <p>Limitation:</p>
 <ul>
@@ -278,10 +274,9 @@ div.csl-indent {
 </ul>
 <p>Findings from this study derive same observation with <span class="citation" data-cites="MehmoodMaryam2022RSIC">Mehmood et al. (<a href="references.html#ref-MehmoodMaryam2022RSIC" role="doc-biblioref">2022</a>)</span>, which object based image analysis has better performance than the other 2 types of classification on high resolution image. On the other hand, the summary above shows that although sub-pixel and object based analysis provides a better overall result and accuracy, they do have additional issues to consider during implementation. Using sub-pixel based and object based analysis requires more attention on the preservation of information or feature details, and have more difficulty in ensuring the reproducibility due to the diverse settings and parameter selection.</p>
 </section>
-</section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
-<p>From the introduction of image classification in these two weeks, I have a better understanding on the diverse classification techniques, precautions in application and accuracy assessment. After doing literature review on classification techniques, I realise the importance of identifying characteristics, advantage and limitation of each methods, and select approach based on the research topic and datasets. Study by <span class="citation" data-cites="SabaSumbalBahar2022Cops">Saba et al. (<a href="references.html#ref-SabaSumbalBahar2022Cops" role="doc-biblioref">2023</a>)</span> provide a lot of insight on the three types of image classification. Sub-pixel and object based may have a wider application than pixel based considering the abundance of classes from spectral values under fuzzy classifier and the variety of parameters combined respectively, which can significantly contribute to in high resolution analysis. This will be an interesting topic to research on as the performance of each approach may differ between various Geosciences applications, as they each with its limitation in practice.</p>
+<p>From the introduction of image classification in these two weeks, I have a better understanding on the diverse classification techniques, precautions in application and accuracy assessment. After doing literature review on classification techniques, I realise the importance of identifying characteristics, advantage and limitation of each methods, and select approach based on the research topic and datasets. Study by <span class="citation" data-cites="SabaSumbalBahar2022Cops">Saba et al. (<a href="references.html#ref-SabaSumbalBahar2022Cops" role="doc-biblioref">2023</a>)</span> provide a lot of insight on the three types of image classification. Sub-pixel and object based may have a wider application than pixel based considering the abundance of classes from spectral values under fuzzy classifier and the variety of parameters combined respectively, which can significantly contribute to in high resolution analysis. This will be an interesting topic to research on as the performance of each approach may differ between various Geosciences applications, as they all have its own limitation in practice.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">

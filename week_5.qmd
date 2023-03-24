@@ -2,11 +2,43 @@
 
 ## Summary
 
-In remote sensing analysis, Google Earth Engine (GEE) presents advantage in providing a large collection of satellite image with uniform projection (EPSG: 3857). Instead of downloading images from external websites and process it in software, GEE allows import of image collections with dates and region filter, pre-processing and analysis on the same platform collectively. In addition, GEE provides a variety of geometries and features for geometry operations, such as allowing image clipping with shapefile. In application, many functions are also available to manage data for analysis, including image reduction, texture measurement and principal components transform. A question that I have regarding image reduction is will the compress of data generalise information and causing the loss of information.
+In remote sensing analysis, Google Earth Engine (GEE) presents advantages in providing a large collection of satellite image with uniform projection (EPSG: 3857). Instead of downloading images from external websites and process it in software, GEE allows import of image collections with dates and region filter, pre-processing and analysis on the same platform collectively. In addition, GEE provides a variety of geometries and features for geometry operations, such as allowing image clipping with shapefile. In application, many functions are also available to manage data for analysis, including image reduction, texture measurement and principal components transform. In class, three scenarios were mentioned for image reduction:
+
+1.  For whole image:
+
+    Reduced image can be presented by median value, which can be used in GEE through specifying the median reducer (collection.reduce).
+
+2.  By region:
+
+    Mean reducer can also applied for regional scale, which result will be less generalised than whole image application.
+
+3.  By neighbourhood:
+
+    Applying kernel to neighbourhood scale to analyse window of pixels surrounding a central pixel
+
+A question that I have regarding image reduction is will the compress of data generalise information and causing the loss of information. The supporting video (Geo for Good 2022) in practical provides very good explanation on how we should reduce a collection into a single image when incorporating temporal information into feature vector. The temporal context can be handled in the following manners:
+
+1.  Mean
+
+2.  Median
+
+    An highlighted advantage is it caters classification with a giant jump
+
+3.  Maximum or minimum
+
+4.  Normalisng statistics composite
+
+    The advantage of taking percentiles of data points is the statistics will still be valid when there is location with fewer pixels
+
+5.  Reduce according to time frame
+
+    Images can be separate into different phases (e.g. taking median according to season composite for phenology study)
+
+Message from this video is image reduction can also be adopt flexibly according to the purpose and time frame of research and user should tailor the compression approach when studying temporal context.
 
 GEE as a cloud computing geospatial tool benefits the community by its high accessibility of data and user-friendly interface for interactive data and algorithm development. The open source use caters the general public by reducing the necessity of using computer with large processing powers and software in remote sensing analysis, which increase the equality of undertaking geospatial research in different nations [@MutangaOnisimo2019GEEA]. In overall, @ZhaoQiang2021PaTi analysed the potential of GEE by its advantages and limitations:
 
-![Advantages and limitation of GEE](img/Capture_8.JPG){fig-align="center" width="323"}
+![Advantages and limitation of GEE \[\@ZhaoQiang2021PaTi\]](img/Capture_8.JPG){fig-align="center" width="386"}
 
 Despite having these limitation, GEE still able to provide sufficient collection of medium to low resolution data and support a majority of geospatial analysis. Therefore, this freely accessible platform will definitely assists future studies with its advantages.
 
@@ -22,10 +54,12 @@ Research by @MutangaOnisimo2019GEEA summarised the contribution of GEE in four m
 
     The recent study by @MatariraDadirai2022GEEf implemented the cloud-based computing techniques in GEE to interpret the morphologically varied informal settlements by spectral and textural information in Durban, Sourth Africa. The paper used spectral bands, spectral indices and texture features from Sentinel 2A imagery as the input of random forest classification, in which textural features is calculated by the GLCM algorithm in ENVI software.
 
-![Research workflow for studying settlements in Durban](img/Capture_9.JPG){fig-align="center" width="364"}
+    ![Research workflow \[\@MatariraDadirai2022GEEf\]](img/Capture_9.JPG){alt="Research workflow [@MatariraDadirai2022GEEf]" fig-align="center" width="510"}
 
-  Reviewing the successful application for informal settlement mapping in GEE,         @MatariraDadirai2022GEEf pointed out that the characteristics of simplified access and process of satellite data, versatility and adaptability of platform, and efficiency in performing pixel-based classification improves urban area mapping from traditional static, product-based approach. This study demonstrates the ability of GEE in handling large dataset and performing more advance analysis like random forest classification. It shows how the bulk of processing and analysis of remote sensing imagery can be performed collectively in GEE to increase the efficiency in script writing. For the GLCM textural features, a possible improvement for the research workflow is using the ee.Image.glcmTexture function in GEE instead of estimating GLCM texture features with ENVI, which simplify the procedures by minimising the transition between platforms.
+    Reviewing the successful application for informal settlement mapping in GEE, @MatariraDadirai2022GEEf pointed out that the characteristics of simplified access and process of satellite data, versatility and adaptability of platform, and efficiency in performing pixel-based classification improves urban area mapping from traditional static, product-based approach. This study demonstrates the ability of GEE in handling large dataset and performing more advance analysis like random forest classification. It shows how the bulk of processing and analysis of remote sensing imagery can be performed collectively in GEE to increase the efficiency in script writing. For the GLCM textural features, a possible improvement for the research workflow is using the ee.Image.glcmTexture function in GEE instead of estimating GLCM texture features with ENVI, which simplify the procedures by minimising the transition between platforms.
 
 ## Reflection
 
-In this week's content, the concept of image reduction is interesting to me because it provides various alternatives in reducing collection to a single image and will be useful for study with temporal information. The supporting material (Geo for Good 2022) in practical provided insight for the approach of handling temporal context, such as normalising statistics by taking percentile and separating seasonal composite for phenology study. It shows how we can flexibly apply functions according to the suitability with research purpose. The provision of comprehensive platform, adequate medium resolution image collections and variety of functions makes GEE an outstanding alternative for processing of remote sensing imagery. Using GEE centralise all processes in the same platform and increase the reproducibility of study, which is applicable for future study and analysis.
+For this week's content, the concept of image reduction is interesting to me because it provides various alternatives in reducing collection to a single image and will be useful for study with temporal information. The supporting material (Geo for Good 2022) in practical provided insight for the approach of handling temporal context, such as normalising statistics by taking percentile and separating seasonal composite for phenology study. It shows how we can flexibly apply functions according to the suitability with research purpose.
+
+The provision of comprehensive platform, adequate medium resolution image collections and variety of functions makes GEE an outstanding alternative for processing of remote sensing imagery. Comparing to image processing in software like ENVI, the coding interface in GEE provides full process from importing data collection, data analysis to final output, which user has clear understanding on each operation and has full control on handling the data. GEE is able to centralise all processes in the same platform and increase the reproducibility of study, which is suitable for future study and analysis.

@@ -19,7 +19,7 @@ characteristics, techniques and required input of pixel based,
 sub-pixel-based and object based image analysis covered in week 6 & 7.
 
 ![Summary of pixel, sub-pixel and object image
-analysis](img/Capture_14.JPG){fig-align="center" width="609"}
+analysis](img/Capture_14.JPG){fig-align="center" width="688"}
 
 Similar to the pixel based analysis, several considerations should be
 accounted in sub-pixel based analysis to ensure the accuracy of outcome.
@@ -34,7 +34,7 @@ through confusion matrix, kappa coefficient, F1-score and Receiver
 Operating Characteristic Curve.
 
 ![Accuracy assessment in machine
-learning](img/Capture_15.JPG){fig-align="center" width="586"}
+learning](img/Capture_15.JPG){fig-align="center" width="676"}
 
 Regarding the application in practice, some points are emphasised in
 class and should be aware of during selection of accuracy assessment
@@ -65,7 +65,7 @@ method:
 
 ## Application
 
-### Comparison between 3 types of classification
+**Comparison between 3 types of classification**
 
 Under the provision of high resolution satellite image, there is an
 increasing popularity in applying object-based classification and
@@ -85,9 +85,9 @@ In terms of study design, authors demonstrated how accuracy evaluation
 can be implemented in practice. The study explains how to structure a
 comprehensive research by considering the advantages and limitations of
 assessment indices. For example, to achieve a balanced evaluation and
-consider, authors also used F-score to evaluate the effectiveness of
-classification. In addition, this study emphasised on the strength and
-limitation of each classification method based on the result and
+consideration, authors also used F-score to evaluate the effectiveness
+of classification. In addition, this study emphasised on the strength
+and limitation of each classification method based on the result and
 literature review:
 
 ***Pixel Based***
@@ -156,5 +156,5 @@ from spectral values under fuzzy classifier and the variety of
 parameters combined respectively, which can significantly contribute to
 in high resolution analysis. This will be an interesting topic to
 research on as the performance of each approach may differ between
-various Geosciences applications, as they each with its limitation in
+various Geosciences applications, as they all have its own limitation in
 practice.

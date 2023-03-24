@@ -210,7 +210,7 @@ div.csl-indent {
 <p>This week lecture and practical discussed the image classification techniques in remote sensing and how it can be applied in different environmental studies. Content focuses on the utilisation of machine learning in categotising areas based on spectral reflectance or texture. The figure below summarised the approach discussed in lecture:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Capture_10.JPG" class="img-fluid figure-img" width="535"></p>
+<p><img src="img/Capture_10.JPG" class="img-fluid figure-img" width="660"></p>
 <p></p><figcaption class="figure-caption">Flow chart of machine learning in image classification</figcaption><p></p>
 </figure>
 </div>
@@ -218,15 +218,15 @@ div.csl-indent {
 <p>On the other hand, 2 types of classification is introduced:unsupervised classification and supervised classification. This week lecture introduced several methods in each classification type:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Capture_11.JPG" class="img-fluid figure-img" width="582"></p>
+<p><img src="img/Capture_11.JPG" class="img-fluid figure-img" width="682"></p>
 <p></p><figcaption class="figure-caption">Types of classification introduced this week</figcaption><p></p>
 </figure>
 </div>
 <p>Recent research focuses on the use of machine learning/ expert systems or hybrid approach in image classification. <span class="citation" data-cites="MehmoodMaryam2022RSIC">Mehmood et al. (<a href="references.html#ref-MehmoodMaryam2022RSIC" role="doc-biblioref">2022</a>)</span> provided a more detailed summary of the basic divisions in learning techniques, especially for deep learning models.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Capture_12.JPG" class="img-fluid figure-img" width="401"></p>
-<p></p><figcaption class="figure-caption">Image classification techniques</figcaption><p></p>
+<p><img src="img/Capture_12.JPG" class="img-fluid figure-img" width="519"></p>
+<p></p><figcaption class="figure-caption">Image classification techniques [@MehmoodMaryam2022RSIC]</figcaption><p></p>
 </figure>
 </div>
 <p>Apart from considering the type of techniques to apply, user also needs to decide between pixel-based, object-based and scene-based classification methods. <span class="citation" data-cites="MehmoodMaryam2022RSIC">Mehmood et al. (<a href="references.html#ref-MehmoodMaryam2022RSIC" role="doc-biblioref">2022</a>)</span> point out that as the spatial resolution of remote sensing images has drastically increased, the popularity of using pixel-based has reduced and research trends changes towards applying object-based classification.</p>
@@ -235,10 +235,10 @@ div.csl-indent {
 <p>2. Training random forest classifier with specifying % of training data</p>
 <p>3. Training random forest classifier with specifying % of training data and greater amount of polygons</p>
 <p>The questions I have for this practice is regarding the pre-processing of EO data and presentation of output. To improve the filtering result of cloud mask, I tried the median approach for taking only the middle value of each pixel. Although this approach can remove clouds due to its high reflectiveness, information in pixels will be generalised and causing lost of a lot of data. Alternatively, more advanced cloud detection or filtering cloud percentage in data source may be more effective to ensure the exclusion of clouds while retaining most information.</p>
-<p>For my analysis of Hong Kong, I also experienced that the clipped image from FAO GAUL global admin layers may not completely display part of the area. Problem occurs at Chek Lap Kok International Airport where a portion was clipped away. An alternative is to use boundary shapefile from official data source or carefully select an appropriate dataset from catalog.</p>
+<p>For my analysis of Hong Kong, I also experienced that the clipped image from FAO GAUL global admin layers may not completely display part of the area. Problem occurs at Chek Lap Kok International Airport where a portion was clipped away. An alternative I can think of is to use boundary shapefile from official data source or carefully select an appropriate dataset from catalog.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Picture1.png" class="img-fluid figure-img" width="337"></p>
+<p><img src="img/Picture1.png" class="img-fluid figure-img" width="423"></p>
 <p></p><figcaption class="figure-caption">Fail to completely clip the whole extent</figcaption><p></p>
 </figure>
 </div>
@@ -248,21 +248,29 @@ div.csl-indent {
 <p>Based on this week’s content, I would like to study the application of CART classifier and random forest classifier, then focus on the research trend in applying object-based classification.</p>
 <section id="cart-classification" class="level3" data-number="6.2.1">
 <h3 data-number="6.2.1" class="anchored" data-anchor-id="cart-classification"><span class="header-section-number">6.2.1</span> CART Classification</h3>
-<p>To classify the land cover of Xinjiang effectively, <span class="citation" data-cites="LiChunyu2023LCCb">Li et al. (<a href="references.html#ref-LiChunyu2023LCCb" role="doc-biblioref">2023</a>)</span> adopted CART from decision tree algorithm due to its ability in analysing the relationship between multiple attributes for generating prediction model. Authors extracted 4 kind of features (spectral features, vegetation indices, water index &amp; radar backscattering coefficient) from pre-processed high resolution images, then engaged gini coefficient, maximum tree depth, and pruning in the model development. A focus in this piece of research is the identification of high spectral reflectance features, like buildings with metal and cement rooftops. Authors approached this concern by using SAR images for detecting buildings/ residential regions and optical image for classifying different types of rooftop along with NDMRI index.</p>
+<p>To classify the land cover of Xinjiang effectively, <span class="citation" data-cites="LiChunyu2023LCCb">Li et al. (<a href="references.html#ref-LiChunyu2023LCCb" role="doc-biblioref">2023</a>)</span> adopted CART from decision tree algorithm due to its ability in analysing the relationship between multiple attributes for generating prediction model. Authors extracted 4 kind of features (i.e.&nbsp;spectral features, vegetation indices, water index &amp; radar backscattering coefficient) from pre-processed high resolution images, then engaged gini coefficient, maximum tree depth, and pruning in the model development. A focus in this piece of research is the identification of high spectral reflectance features, like buildings with metal and cement rooftops. Authors approached this concern by using SAR images for detecting buildings/ residential regions and optical image for classifying different types of rooftop along with NDMRI index.</p>
 <p>This research presents the importance of comprehensive considerations during project design, which characteristics of features should take into account and apply appropriate input data accordingly. Accuracy of machine learning model is greatly determined by the quality of data input. Thus, supporting the research with observations other than multi-spectral image should also be considered.</p>
 </section>
 <section id="random-forest-classification" class="level3" data-number="6.2.2">
 <h3 data-number="6.2.2" class="anchored" data-anchor-id="random-forest-classification"><span class="header-section-number">6.2.2</span> Random Forest Classification</h3>
-<p>With the need of compiling geological map series in Tunisia, <span class="citation" data-cites="AlbertGáspár2021Aorf">Albert and Ammar (<a href="references.html#ref-AlbertGáspár2021Aorf" role="doc-biblioref">2021</a>)</span> proposed the use of random forest classification to automate mapping process with open source satellite imagery. The input data of model was collected at the Jebel Meloussi area by integrating remotely sensed data with topographic elevation data to derive spectral indices (NDVI &amp;d geological indices) and morphometric variables (topographic wetness index &amp; topographic ruggedness index). Authors also applied a variety of techniques to optimise model parameters, such as estimating probability of estimation by out of bag method and evaluating the cross-correlation of the variables.</p>
-<p>Application of machine learning and remotely sensed data in geological mapping has more concerns than LULC mapping, as cartographic materials should be included to describe geological features characteristic morphology. Authors demonstrated a lot of effort in deriving the right choice of predictors and parameters by considering: - highlight of iron-bearing minerals in lithological variables - stronger predictor variables from available data in mean decrease gini values - effectiveness of predictor variables in characterising different geological categories - estimation probability from different sample method - user and producer accuracy test This study provide a good example on how to structure image classification by the detailed description on concerns and way of approach for variable selection, while accuracy assessment was performed to ensure model’s accuracy.</p>
+<p>With the need of compiling geological map series in Tunisia, <span class="citation" data-cites="AlbertGáspár2021Aorf">Albert and Ammar (<a href="references.html#ref-AlbertGáspár2021Aorf" role="doc-biblioref">2021</a>)</span> proposed the use of random forest classification to automate mapping process with open source satellite imagery. The input data of model was collected at the Jebel Meloussi area by integrating remotely sensed data with topographic elevation data to derive spectral indices (NDVI &amp; geological indices) and morphometric variables (topographic wetness index &amp; topographic ruggedness index). Authors also applied a variety of techniques to optimise model parameters, such as estimating probability of estimation by out of bag method and evaluating the cross-correlation of the variables.</p>
+<p>Application of machine learning and remotely sensed data in geological mapping has more concerns than LULC mapping, as cartographic materials should be included to describe geological features characteristic morphology. Authors demonstrated a lot of effort in deriving the right choice of predictors and parameters by considering:</p>
+<ul>
+<li>highlight of iron-bearing minerals in lithological variables</li>
+</ul>
+<p>- stronger predictor variables from available data in mean decrease gini values</p>
+<p>- effectiveness of predictor variables in characterising different geological categories</p>
+<p>- estimation probability from different sample method</p>
+<p>- user and producer accuracy test</p>
+<p>This study provide a good example on how to structure image classification by the detailed description on concerns and way of approach for variable selection, while accuracy assessment was performed to ensure model’s accuracy.</p>
 </section>
 <section id="object-based-classification" class="level3" data-number="6.2.3">
 <h3 data-number="6.2.3" class="anchored" data-anchor-id="object-based-classification"><span class="header-section-number">6.2.3</span> Object-based Classification</h3>
 <p>Study by <span class="citation" data-cites="GuoShanchuan2021Scog">Guo et al. (<a href="references.html#ref-GuoShanchuan2021Scog" role="doc-biblioref">2021</a>)</span> used object-based classification with Landsat time series data to monitor the spatiotemporal changes of glacier and snow fluctuations at Namcha Barwa–Gyala Peri (NBGP) massif, where most serious glacier retreat is experienced under climate change. The research used object-based classification because of its ability in discriminating objects with similar spectral features and adaptive processing units that applicable for multisource data. Similar to the observation mentioned by <span class="citation" data-cites="MehmoodMaryam2022RSIC">Mehmood et al. (<a href="references.html#ref-MehmoodMaryam2022RSIC" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="GuoShanchuan2021Scog">Guo et al. (<a href="references.html#ref-GuoShanchuan2021Scog" role="doc-biblioref">2021</a>)</span> indicated that pixel-based classification restricts the use of classification features and result in ‘salt and pepper’ effects. Using Landsat and topographic data, debris-glacier is classified with the following procedures:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/Capture_13.JPG" class="img-fluid figure-img" width="375"></p>
-<p></p><figcaption class="figure-caption">Procedures of debris-glacier classification</figcaption><p></p>
+<p><img src="img/Capture_13.JPG" class="img-fluid figure-img" width="479"></p>
+<p></p><figcaption class="figure-caption">Procedures of debris-glacier classification [@GuoShanchuan2021Scog]</figcaption><p></p>
 </figure>
 </div>
 <p>A critical challenge of this study is the need of defining threshold for implementing multiple hierarchical level rule-based classification. Other than using NDVI to extract non-vegetation or sparse vegetation region, analyst need to have a substantial background understanding of feature characteristics physically and spectrally, such as defining elevation threshold from glacier terminus and slope restriction of debris-covered glacier. Therefore, the glacial environment dynamics is comparatively complex and challenging to classify, especially when segments in object-based classification is generated from the criteria of homogeneity.</p>

@@ -26,7 +26,7 @@ global and local policies are proposed and implemented to ease the UHI
 effect, while promoting sustainability in urban planning and design. The
 following table concluded the examples of policies explained in class:
 
-![](img/Capture_17.JPG){fig-align="center" width="582"}
+![](img/Capture_17.JPG){fig-align="center" width="687"}
 
 The examples above demonstrate a common problem that no specific
 methodology and way of implementation are given. Rethinking on how an
@@ -107,8 +107,9 @@ vulnerable zones are distributed close to urban centers and analysis the
 composition of landuse, footprint, planted space and air conditioning in
 these zone.
 
-![Framework of assessment scheme](img/Capture_18.JPG){fig-align="center"
-width="473"}
+![Framework of assessment scheme
+\[\@TécherMagalie2023UHIV\]](img/Capture_18.JPG){fig-align="center"
+width="512"}
 
 The proposed framework is comprehensively built by considering various
 input data to analysis the UHI effect. This study shows a lot of effort
@@ -129,7 +130,7 @@ and specifically analysis according to different indicators.
 
 @SuscaTiziana2020Hiei suggested a pathway to expand the current life
 cycle assessment (LCA) framework from only capturing the complexity and
-impact of urban settlement, to including interactions between built
+impact of urban settlement, to include interactions between built
 environment and local climate, which enables effective policy making for
 UHI effects. Referencing LCA studies that focused on UHI mitigation,
 authors proposed that UHI can be included in methodology by either
@@ -148,7 +149,7 @@ literature. However, the expanded framework has shortcomings in the
 diversity of factors that it considered and the statistics/ mathematical
 calculation it provided is based on specific region/ case study, causing
 a limit direct application of proposed methodology, as urban settlements
-is different city are unique in structure. Therefore, reviewing the
+in different city are unique in structure. Therefore, reviewing the
 consideration of policy making mentioned this week, this assessment
 framework may have deficency in showing the disparities in cities.
 
@@ -165,7 +166,7 @@ planning can highly impact the equality between neighbourhoods, such as
 the inequality of accessing green space which the quantity and quality
 of urban green space may varies between places.
 
-An important idea I retried from this week content is literature review
+An important idea I retrived from this week content is literature review
 acts as an important role when structuring framework for policy. Other
 than providing insight on how the current system is formed based on
 historical record, it also assist the justification of definitions,
