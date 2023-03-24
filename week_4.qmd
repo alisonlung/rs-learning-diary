@@ -6,7 +6,7 @@ Under the demand for urban development and phenomenon of urban agglomerations, t
 
 Among all infrastructure, the Manaus--Iranduba Bridge is an significant development landmark that influence the territoral expansion pattern, where economic activities are located at the hyper-modern area in central Manaus and separate the south bank from economic development [@doi:10.1177/0042098013493478].
 
-![Manaus--Iranduba Bridge surrounded by central Manaus and ISZ \[\@doi:10.1177/0042098013493478\]](img/Capture_6.JPG){fig-align="center" width="473"}
+![Manaus--Iranduba Bridge surrounded by central Manaus and ISZ [@doi:10.1177/0042098013493478]](img/Capture_6.JPG){fig-align="center" width="473"}
 
 Referencing to the previous Amazonas programmes like Manaus' Igarapé Social and Environmental Restoration Programme (PROSAMIM), @doi:10.1177/0042098013493478 indicated that sanitising environmentally sensitive areas and focusing development in central area had led to several shortcomings:
 
@@ -22,7 +22,7 @@ Based on the mentioned shortcomings, there is a necessity on monitoring how the 
 
 Study by @FarhadiHadi2021FRMb applied remote sensing data with random forest technique to obtain the flood risk indices for the Galikesh River basin, Northern Iran. Landsat 8 satellite imagery and Shuttle Radar Topography Mission (SRTM) Digital Elevation Model (DEM) are used to generate indices respectively in Google Earth Engine, then normalised indices are used as input in random forest to compute the importance degree of each index and is used to produce a flood hazard map. Landsat 8 satellite images are used to generate four indices: NDVI, NDWI, ST, and LU, while SRTM DEM model is used to produce six indices: Sl, SA, El, RD, WRD, and TWI. This study concern a wide range of possible factors that can lead to flood by calculating 11 indices and estimate their contribution to the flood risk, such as elevation, slope, river distance and soil texture. Data from passive and active sensors are utilised efficiently to obtain environment information from their spectral significance.
 
-![Research design \[\@FarhadiHadi2021FRMb\]](img/Capture_7.JPG){fig-align="center" width="410"}
+![Research design [@FarhadiHadi2021FRMb]](img/Capture_7.JPG){fig-align="center" width="410"}
 
 2.  *Suspended-Sediment Concentration (SSC)*
 

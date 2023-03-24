@@ -1,7 +1,184 @@
 {
     "sources": [
         {
-            "DOI": "https://doi.org/10.1016/B978-008045405-4.00237-8",
+            "DOI": "10.1016/B978-0-12-815826-5.00001-5",
+            "ISBN": "978-0-12-815826-5",
+            "URL": "https://www.sciencedirect.com/science/article/pii/B9780128158265000015",
+            "abstract": "This chapter provides an overview of the remote sensing system, including the platform and sensor system, data transmission and ground receiving system, processing system of radiometric and geometric properties, analysis system for mapping category variables and generating high-level products of quantitative variables, product production and distribution system, product validation system, and remote sensing applications. It aims to present a complete picture of the state-of-the-art development of remote sensing techniques by linking different chapters in the rest of the book and filling in any possible gaps.",
+            "container-title": "Advanced remote sensing (second edition)",
+            "edition": "Second Edition",
+            "editor": [
+                {
+                    "family": "Liang",
+                    "given": "Shunlin"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Jindi"
+                }
+            ],
+            "id": "liang_chapter_2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "keyword": "Application,Inversion,Modeling,Remote sensing system,Satellite",
+            "page": "1-57",
+            "publisher": "Academic Press",
+            "title": "Chapter 1 - A systematic view of remote sensing",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.1007/s12517-021-08509-x",
+            "ISSN": "1866-7511, 1866-7538",
+            "URL": "https://link.springer.com/10.1007/s12517-021-08509-x",
+            "abstract": "Remotely sensed data such as satellite photos and radar images can be used to produce geological maps on arid regions, where the vegetation coverage does not have a significant effect. In central Tunisia, the Jebel Meloussi area has unique geological features and characteristic morphology (i.e. flat areas with dune fields in contrast with hills of folded and eroded stratigraphic sequences), which makes it an ideal area for testing new methods of automatic terrain classification. For this, data from the Sentinel 2 satellite sensor and the SRTM-based MERIT DEM (digital elevation model) were used in the present study. Using R scripts and the random forest classification method, modelling was performed on four lithological variables—derived from the different bands of the Sentinel 2 images—and two morphometric parameters for the area of the 1:50,000 geological map sheet no. 103. The four lithological variables were chosen to highlight the iron-bearing minerals since the spectral parameters of the Sentinel 2 sensors are especially useful for this purpose. The training areas of the classification were selected on the geological map. The results of the modelling identified Eocene and Cretaceous evaporite-bearing sedimentary series (such as the Jebs and the Bouhedma Formations) with the highest producer accuracy (> 60% of the predicted pixels match with the map). The pyritic argillites of the Sidi Khalif Formation were also recognized with the same accuracy, and the Quaternary sebhkas and dunes were also well predicted. The study concludes that the classification-based geological map is useful for field geologist prior to field surveys.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Albert",
+                    "given": "Gáspár"
+                },
+                {
+                    "family": "Ammar",
+                    "given": "Seif"
+                }
+            ],
+            "container-title": "Arabian Journal of Geosciences",
+            "container-title-short": "Arab J Geosci",
+            "id": "AlbertGáspár2021Aorf",
+            "issue": "21",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        11
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "2240",
+            "title": "Application of random forest classification and remotely sensed data in geological mapping on the Jebel Meloussi area (Tunisia)",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "DOI": "10.3390/w13213115",
+            "ISSN": "2073-4441",
+            "URL": "https://www.mdpi.com/2073-4441/13/21/3115",
+            "abstract": "Detecting effective parameters in flood occurrence is one of the most important issues that has drawn more attention in recent years. Remote Sensing (RS) and Geographical Information System (GIS) are two efficient ways to spatially predict Flood Risk Mapping (FRM). In this study, a web-based platform called the Google Earth Engine (GEE) (Google Company, Mountain View, CA, USA) was used to obtain flood risk indices for the Galikesh River basin, Northern Iran. With the aid of Landsat 8 satellite imagery and the Shuttle Radar Topography Mission (SRTM) Digital Elevation Model (DEM), 11 risk indices (Elevation (El), Slope (Sl), Slope Aspect (SA), Land Use (LU), Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI), Topographic Wetness Index (TWI), River Distance (RD), Waterway and River Density (WRD), Soil Texture (ST]), and Maximum One-Day Precipitation (M1DP)) were provided. In the next step, all of these indices were imported into ArcMap 10.8 (Esri, West Redlands, CA, USA) software for index normalization and to better visualize the graphical output. Afterward, an intelligent learning machine (Random Forest (RF)), which is a robust data mining technique, was used to compute the importance degree of each index and to obtain the flood hazard map. According to the results, the indices of WRD, RD, M1DP, and El accounted for about 68.27 percent of the total flood risk. Among these indices, the WRD index containing about 23.8 percent of the total risk has the greatest impact on floods. According to FRM mapping, about 21 and 18 percent of the total areas stood at the higher and highest risk areas, respectively.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Farhadi",
+                    "given": "Hadi"
+                },
+                {
+                    "family": "Najafzadeh",
+                    "given": "Mohammad"
+                }
+            ],
+            "container-title": "Water",
+            "container-title-short": "Water",
+            "id": "FarhadiHadi2021FRMb",
+            "issue": "21",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        11,
+                        4
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "3115",
+            "title": "Flood Risk Mapping by Remote Sensing Data and Random Forest Technique",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "DOI": "10.1016/j.isprsjprs.2021.04.018",
+            "ISSN": "09242716",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0924271621001210",
+            "abstract": "The glacier environment in the Namcha Barwa–Gyala Peri (NBGP) massif is regarded as one of the most sensitive areas to climate change, yet the change estimates remain inadequate due to the limited knowledge of the complex debris-covered glacier environment and the lack of available remote sensing data caused by continu­ ously cloudy weather. To examine the changes of the complex glacial environment, a multiple hierarchical object- and rule-based classification (MHORC) scheme is proposed by combining Landsat time series images and topographic data. Object-based image analysis (OBIA) is introduced due to its capabilities of handling data contextually and hierarchically and using multi-source data jointly so that multiple hierarchical rule-based classification can be developed to distinguish the objects with similar spectrum such as debris-covered gla­ ciers and their surrounding terrain. All the available Landsat images from 1987 to 2019 are filtered by the cloud cover condition (less than 10%) and accordingly used in the MHORC to obtain spatial and temporal information of the glacier and snow over the NBGP massif. The images collected in the snow-free season are used to estimate the glacier extent state and the historical changes, and those in the snow-covered are used to estimate the snow cover fluctuation using harmonic analysis. The results show that the NBGP contains 65 glaciers (≥0.1 km2) with a total area of 462.7 km2, among which valley glaciers account for 21.5% in number but cover an area of 354.2 km2, more than 76% of the total area. An accelerating reduction trend of the glacier area is confirmed as the area change velocity is − 0.62 km2 yr− 1 between 1999 and 2003 and reach − 2.95 km2 yr− 1 between 2003 and 2015. The seasonal snow cover area shows a reduction in the secular trend and an increase in fluctuation amplitude. Both glacier and seasonal snow display heterogeneity in the spatial and temporal patterns. Such heterogeneous dynamics might be related to the trade-off between water vapor supply and regional thermal conditions. This MHORC developed in this study demonstrates its effectiveness in delineating the debris-covered glacier envi­ ronment and the potential of using Landsat time series to track glacial environment evolution. Besides, the analysis of seasonal snow fluctuations provides a novel perspective to re-recognize the glacial environment dynamics, and the knowledge of glacier extent changes and season snow fluctuations over the NBGP massif can improve the understanding of environmental effects from climate change.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Guo",
+                    "given": "Shanchuan"
+                },
+                {
+                    "family": "Du",
+                    "given": "Peijun"
+                },
+                {
+                    "family": "Xia",
+                    "given": "Junshi"
+                },
+                {
+                    "family": "Tang",
+                    "given": "Pengfei"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Xin"
+                },
+                {
+                    "family": "Meng",
+                    "given": "Yaping"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Hua"
+                }
+            ],
+            "container-title": "ISPRS Journal of Photogrammetry and Remote Sensing",
+            "container-title-short": "ISPRS Journal of Photogrammetry and Remote Sensing",
+            "id": "GuoShanchuan2021Scog",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        7
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "21-37",
+            "title": "Spatiotemporal changes of glacier and seasonal snow fluctuations over the Namcha Barwa–Gyala Peri massif using object-based classification from Landsat time series",
+            "type": "article-journal",
+            "volume": "177"
+        },
+        {
+            "DOI": "10.1016/B978-008045405-4.00237-8",
             "ISBN": "978-0-08-045405-4",
             "URL": "https://www.sciencedirect.com/science/article/pii/B9780080454054002378",
             "abstract": "Remotely sensed data and methods are used extensively to provide data layers that are used in ecological modeling. Understanding fundamental remotely sensed concepts helps ecosystem modelers make informed decisions regarding the utility and limitations of the broad spectrum of available remote-sensing and derived data. The main focus of this article is to introduce remote-sensing science and its application to ecological modeling. It is not designed to be comprehensive on the subject of remote sensing, but rather to introduce basic concepts and terminology. The intended audience is consumers, not producers of remote-sensing products. The article begins with an overview of fundamental remote-sensing concepts. This is followed by a section on how remote-sensing data can be used to derive a broad range of biophysical data sets that are useful for terrestrial and aquatic ecological modeling. Several of the more common data sets derived from remotely sensed data are described with comments about how the data sets are produced, their strengths, and limitations. The article concludes with a summary of the accuracy and validation.",
@@ -30,7 +207,7 @@
                     ]
                 ]
             },
-            "keyword": "Accuracy assessment, Image, Land cover, Land cover change, Modeling, Remote sensing, Satellite, Soil moisture, Topography, Validation",
+            "keyword": "Accuracy assessment,Image,Land cover,Land cover change,Modeling,Remote sensing,Satellite,Soil moisture,Topography,Validation",
             "page": "2986-2994",
             "publisher": "Academic Press",
             "publisher-place": "Oxford",
@@ -38,23 +215,749 @@
             "type": "chapter"
         },
         {
-            "DOI": "https://doi.org/10.1016/B978-0-12-815826-5.00001-5",
-            "ISBN": "978-0-12-815826-5",
-            "URL": "https://www.sciencedirect.com/science/article/pii/B9780128158265000015",
-            "abstract": "This chapter provides an overview of the remote sensing system, including the platform and sensor system, data transmission and ground receiving system, processing system of radiometric and geometric properties, analysis system for mapping category variables and generating high-level products of quantitative variables, product production and distribution system, product validation system, and remote sensing applications. It aims to present a complete picture of the state-of-the-art development of remote sensing techniques by linking different chapters in the rest of the book and filling in any possible gaps.",
-            "container-title": "Advanced remote sensing (second edition)",
-            "edition": "Second Edition",
+            "DOI": "10.1016/j.earscirev.2013.11.005",
+            "ISSN": "0012-8252",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S001282521300192X",
+            "abstract": "In this paper, spatial and temporal trajectories of land cover/land use change (LCLUC) derived from Landsat data record are combined with hydrological modeling to explore the implication of vegetation dynamics on soil erosion and total suspended sediment (TSS) loading to surface rivers. The inter-annual coefficient of variation (CoV) of normalized difference vegetation index (NDVI) is used to screen the LCLUC and climate change. The Soil and Water Assessment Tool (SWAT) is employed to identify the monthly TSS for two times interval (1991 to 2001 and 2001 to 2011) at subbasin levels. SWAT model is calibrated from 1991 to 2001 and validated from 2002 to 2011 at three USGS gauging sites located in the study area. The Spearman’s rank correlation of annual mean TSS is used to assess the temporal trends of TSS dynamics in the subbasins in the two study periods. The spatial correlation among NDVI, LCLUC, climate change and TSS loading rate changes is quantified by using linear regression model and negative/positive trend analysis. Our results showed that higher rainfall yields contribute to higher TSS loading into surface waters. A higher inter-annual accumulated vegetation index and lower inter-annual CoV distributed over the uplands resulted in a lower TSS loading rate, while a relatively low vegetation index with larger CoV observed over lowlands resulted in a higher TSS loading rate. The TSS loading rate at the basin outlet increased with the decrease of annual NDVI due to expanding urban areas in the watershed. The results also suggested nonlinearity between the trends of TSS loading with any of a specific land cover change because of the fact that the contribution of a factor can be influenced by the effects of other factors. However, dominant factors that shape the relationship between the trend of TSS loading and specific land cover changes were detected. The change of forest showed a negative relationship while agriculture and pasture demonstrated positive relationships with TSS loading change. Our results do not show any significant causal relationship between urbanization and the TSS loading change suggesting that further investigation needs to be carried out to understand the mechanism of the impact of urban sprawl on surface water quality.",
+            "author": [
+                {
+                    "family": "Jordan",
+                    "given": "Yuyan C."
+                },
+                {
+                    "family": "Ghulam",
+                    "given": "Abduwasit"
+                },
+                {
+                    "family": "Hartling",
+                    "given": "Sean"
+                }
+            ],
+            "container-title": "Earth-Science Reviews",
+            "id": "JordanYuyanC.2014Tosw",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "keyword": "Climate change,Land-cover/land-use change,Remote sensing,SWAT,Water pollution",
+            "page": "181-195",
+            "title": "Traits of surface water pollution under climate and land use changes: A remote sensing and hydrological modeling approach",
+            "title-short": "Traits of surface water pollution under climate and land use changes",
+            "type": "article-journal",
+            "volume": "128"
+        },
+        {
+            "DOI": "10.1177/0042098013493478",
+            "ISSN": "0042-0980, 1360-063X",
+            "URL": "http://journals.sagepub.com/doi/10.1177/0042098013493478",
+            "abstract": "This paper fosters dialogue between neoliberal urbanism and post-colonial research, drawing attention to city-regional formation in the global South. It critiques the Manaus Metropolitan Region (RMM) initiative as a state-space remapping guided by ecological entrepreneurialism. In 2007, Amazonas state created the framework to spearhead growth in an extensive territory construed as both urban and pristine. RMM mobilises infrastructure investments and forceful zoning to reconcile the expansion of tax-exempted manufacturing, with exclusive “global city” redevelopment, and heightened conservation measures seeking to leverage both the symbolic value of peri-urban rainforests and their potential to generate carbon-credit revenues. Focusing on the Manaus–Iranduba Bridge and its socio-spatial impacts, the paper problematises visions of sustainable urbanisation that circulate transnationally and exacerbate territorialised patterns of geographically uneven development. Hence, top–down global city-regional construction spearheads political reactions, social mobilisation and territorial conflicts of complex resolution and important implications for translocal activism and coalition building.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Kanai",
+                    "given": "Juan Miguel"
+                }
+            ],
+            "container-title": "Urban Studies",
+            "container-title-short": "Urban Studies",
+            "id": "doi:10.1177/0042098013493478",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        8
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "2387-2405",
+            "title": "Capital of the Amazon Rainforest: Constructing a Global City-region for Entrepreneurial Manaus",
+            "title-short": "Capital of the Amazon Rainforest",
+            "type": "article-journal",
+            "volume": "51"
+        },
+        {
+            "DOI": "10.1016/j.ijleo.2017.10.132",
+            "ISSN": "0030-4026",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0030402617313451",
+            "abstract": "In this paper, an effective and simple enhancement method for remotely sensed images is proposed to improve the visual quality of the image. Proposed method uses the hazy image model for image enhancement. Hazy image model consist of two unknown parameters, the global airlight and the transmission map. The proposed method determines the global airlight and the transmission map, by using simple statistical values (the standard deviation and the mean value) of the original image. The proposed method enhances the images better than the former methods, as well as keeps the original reflectance values of the input image better compared to the traditional remote sensing enhancement methods.",
+            "author": [
+                {
+                    "family": "Kaplan",
+                    "given": "N. H."
+                }
+            ],
+            "container-title": "Optik",
+            "id": "kaplan_remote_2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "keyword": "Hazy image model,Image enhancement,Remote sensing images",
+            "page": "139-148",
+            "title": "Remote sensing image enhancement using hazy image model",
+            "type": "article-journal",
+            "volume": "155"
+        },
+        {
+            "DOI": "10.4081/gh.2006.280",
+            "ISSN": "1970-7096, 1827-1987",
+            "URL": "http://geospatialhealth.net/index.php/gh/article/view/280",
+            "abstract": "Depending on the research question or the public health application, the appropriate resolution of the data varies temporally, spatially, and, for satellite data, spectrally and radiometrically. Regardless of the scale used to address a research or public health question, the temptation is always there to extrapolate from fine-resolution data or to interpolate from coarse resolution studies. In both cases, the relevance of data and analyses conducted on one spatial level to other levels cannot be taken for granted. Spatial heterogeneity on the micro-scale may not be detected using coarse spatial resolution, and conversely, general patterns on the macro-scale may not be detected using fine spatial resolution. Two studies are described where the transmission dynamics and risk of infection was assessed on the micro-scale starting with household level studies in one community, and the study area was extended gradually to consider several communities and sources for vectors or intermediate hosts. In a study of Chagas disease in northwest Argentina, the reinfestation process of communities by the main domestic vector was analyzed using spatial statistics; sources within and outside communities as well as the distance of reinfestation were identified. In a study of urinary schistosomiasis in coastal Kenya, age dependent and directional focal clustering of infections was detected around some aquatic habitats, and a hydrological model was developed to detect least cost dispersal routes that allow snails to reinfest dried-up habitats. Some general aspects of focal statistics are discussed. Several general questions need to be considered in geospatial health studies, including the following: (i) what are the best criteria for selecting the spatial (and temporal) unit of intervention and analysis? (ii) how do the key measures of risk and transmission dynamics vary with scale? (iii) how do we integrate processes occurring at diverse spatial and temporal scales? All of these questions can only be addressed through solid biological, epidemiological and socio-economic understanding of the system in time and space.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Kitron",
+                    "given": "Uriel"
+                },
+                {
+                    "family": "Clennon",
+                    "given": "Julie A."
+                },
+                {
+                    "family": "Cecere",
+                    "given": "M. Carla"
+                },
+                {
+                    "family": "Gürtler",
+                    "given": "Ricardo E."
+                },
+                {
+                    "family": "King",
+                    "given": "Charles H."
+                },
+                {
+                    "family": "Vazquez-Prokopec",
+                    "given": "Gonzalo"
+                }
+            ],
+            "container-title": "Geospatial health",
+            "container-title-short": "Geospat Health",
+            "id": "UrielKitron2006Uoda",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006,
+                        11,
+                        1
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "49",
+            "title": "Upscale or downscale: Applications of fine scale remotely sensed data to Chagas disease in Argentina and schistosomiasis in Kenya",
+            "title-short": "Upscale or downscale",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "DOI": "10.1109/LGRS.2021.3054168",
+            "ISSN": "1545-598X, 1558-0571",
+            "URL": "https://ieeexplore.ieee.org/document/9349248/",
+            "abstract": "The currently available tools and services as open and free cloud resources to process big satellite data opened up a new frontier of possibilities and applications including archeological research. These new research opportunities also pose several challenges to be faced, as, for example, the data processing and interpretation. This letter is about the assessment of different methods and data sources to support a visual interpretation of EO imagery. Multitemporal Sentinel 1 and Sentinel 2 data sets have been processed to assess their capability in the detection of buried archeological remains related to some lost sections of the ancient Via Appia road (herein selected as case study). The very subtle and nonpermanent features linked to buried archeological remains can be captured using multitemporal (intra- and inter-year) satellite acquisitions, but this requires strong hardware infrastructures or cloud facilities, today also available as open and free tools as Google Earth Engine (GEE). In this study, a total of 2948 Sentinel 1 and 743 Sentinel 2 images were selected (from February 2017 to August 2020) and processed using GEE to enhance and unveil archeological features. Outputs obtained from both Sentinel 1 and Sentinel 2 have been successfully compared with in situ analysis and high-resolution Google Earth images.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Lasaponara",
+                    "given": "Rosa"
+                },
+                {
+                    "family": "Abate",
+                    "given": "Nicodemo"
+                },
+                {
+                    "family": "Masini",
+                    "given": "Nicola"
+                }
+            ],
+            "container-title": "IEEE Geoscience and Remote Sensing Letters",
+            "container-title-short": "IEEE Geosci. Remote Sensing Lett.",
+            "id": "LasaponaraRosa2022OtUo",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "1-5",
+            "title": "On the Use of Google Earth Engine and Sentinel Data to Detect “Lost” Sections of Ancient Roads. The Case of Via Appia",
+            "type": "article-journal",
+            "volume": "19"
+        },
+        {
+            "DOI": "10.1080/2150704X.2020.1847350",
+            "ISSN": "0143-1161, 1366-5901",
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/2150704X.2020.1847350",
+            "abstract": "In colour remote sensing of water, the effect of geometric correc­ tion on the extraction of water reflectance is worth exploring. The spectral data were measured by sampling three polluted water bodies in Zhengzhou City, and the Planet satellite image data of these areas were obtained and divided into two groups (with and without geometric correction). The two groups of images were then subjected to atmospheric correction using the quick atmospheric correction (QUAC) algorithm to obtain the remote-sensing reflec­ tance values of the water bodies. The results showed that, for the two different extraction methods, the original data and geometri­ cally corrected extraction results are approximately equal, and the spectral curves show similar trends. Compared with the measured spectral data, it is found that the two groups of data extracted from remote sensing images are more likely to show large-scale changes between the red band and the near-infrared (NIR) band. It is con­ cluded that geometric correction affects values of water reflectance based on extraction of images, but has less effect on the overall trend of the curve, and the probability of changes of water reflec­ tance extraction in NIR band is higher than in other bands.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Li",
+                    "given": "Aimin"
+                },
+                {
+                    "family": "Xia",
+                    "given": "Guangping"
+                }
+            ],
+            "container-title": "International Journal of Remote Sensing",
+            "container-title-short": "International Journal of Remote Sensing",
+            "id": "doi:10.1080/2150704X.2020.1847350",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        3,
+                        19
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "2280-2291",
+            "title": "The influence of geometric correction on the accuracy of the extraction of the remote sensing reflectance of water",
+            "type": "article-journal",
+            "volume": "42"
+        },
+        {
+            "DOI": "10.3390/su15032535",
+            "ISSN": "2071-1050",
+            "URL": "https://www.mdpi.com/2071-1050/15/3/2535",
+            "abstract": "High-resolution remote-sensing images can be used in human activity analysis and criminal activity monitoring, especially in sparsely populated zones. In this paper, we explore the applicability of China’s Gaofen satellite images in the land cover classification of Xinjiang, China. First of all, the features of spectral reflectance and a normalized radar cross section (NRCS) for different types of land covers were analyzed. Moreover, the seasonal variation of the NRCS in SAR (Synthetic Aperture Radar) images for the study area, Dunkuotan Village of Yuli County, China, was demonstrated by the GEE (Google Earth Engine) platform accordingly. Finally, the CART (classification and regression trees) algorithm of a DT (decision tree) was applied to investigate the classification of land cover in the western area of China when both optical and SAR images were employed. An overall classification accuracy of 83.15% with a kappa coefficient of 0.803 was observed by using GF-2/GF-3 images (2017–2021) in the study area. The DT-based classification procedure proposed in this investigation proved that Gaofen series remote-sensing images can be engaged to effectively promote the routine workflow of the administrative department.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Li",
+                    "given": "Chunyu"
+                },
+                {
+                    "family": "Cai",
+                    "given": "Rong"
+                },
+                {
+                    "family": "Tian",
+                    "given": "Wei"
+                },
+                {
+                    "family": "Yuan",
+                    "given": "Junna"
+                },
+                {
+                    "family": "Mi",
+                    "given": "Xiaofei"
+                }
+            ],
+            "container-title": "Sustainability",
+            "container-title-short": "Sustainability",
+            "id": "LiChunyu2023LCCb",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        1,
+                        31
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "2535",
+            "title": "Land Cover Classification by Gaofen Satellite Images Based on CART Algorithm in Yuli County, Xinjiang, China",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1002/9781118724194.ch4",
+            "ISBN": "978-1-118-72419-4 978-1-118-72420-0",
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/9781118724194.ch4",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Liu",
+                    "given": "Jian Guo"
+                },
+                {
+                    "family": "Mason",
+                    "given": "Philippa J."
+                }
+            ],
+            "container-title": "Image Processing and GIS for Remote Sensing",
+            "id": "doi:https://doi.org/10.1002/9781118724194.ch4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        1,
+                        8
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "35-53",
+            "publisher": "John Wiley & Sons, Ltd",
+            "publisher-place": "Chichester, UK",
+            "title": "Filtering and neighbourhood processing",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.1002/9781118724194.ch9",
+            "ISBN": "978-1-118-72419-4 978-1-118-72420-0",
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/9781118724194.ch9",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Liu",
+                    "given": "Jian Guo"
+                },
+                {
+                    "family": "Mason",
+                    "given": "Philippa J."
+                }
+            ],
+            "container-title": "Image Processing and GIS for Remote Sensing",
+            "id": "doi:https://doi.org/10.1002/9781118724194.ch9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        1,
+                        8
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "103-111",
+            "publisher": "John Wiley & Sons, Ltd",
+            "publisher-place": "Chichester, UK",
+            "title": "Image geometric operations",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.1002/9781118724194.ch2",
+            "ISBN": "978-1-118-72419-4 978-1-118-72420-0",
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/9781118724194.ch2",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Liu",
+                    "given": "Jian Guo"
+                },
+                {
+                    "family": "Mason",
+                    "given": "Philippa J."
+                }
+            ],
+            "container-title": "Image Processing and GIS for Remote Sensing",
+            "id": "doi:https://doi.org/10.1002/9781118724194.ch2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        1,
+                        8
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "9-19",
+            "publisher": "John Wiley & Sons, Ltd",
+            "publisher-place": "Chichester, UK",
+            "title": "Point operations (contrast enhancement)",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.1002/9781118724194.ch7",
+            "ISBN": "978-1-118-72419-4 978-1-118-72420-0",
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/9781118724194.ch7",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Liu",
+                    "given": "Jian Guo"
+                },
+                {
+                    "family": "Mason",
+                    "given": "Philippa J."
+                }
+            ],
+            "container-title": "Image Processing and GIS for Remote Sensing",
+            "id": "doi:https://doi.org/10.1002/9781118724194.ch7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        1,
+                        8
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "77-89",
+            "publisher": "John Wiley & Sons, Ltd",
+            "publisher-place": "Chichester, UK",
+            "title": "Principal component analysis",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.3390/rs14205130",
+            "ISSN": "2072-4292",
+            "URL": "https://www.mdpi.com/2072-4292/14/20/5130",
+            "abstract": "Accurate and reliable informal settlement maps are fundamental decision-making tools for planning, and for expediting informed management of cities. However, extraction of spatial information for informal settlements has remained a mammoth task due to the spatial heterogeneity of urban landscape components, requiring complex analytical processes. To date, the use of Google Earth Engine platform (GEE), with cloud computing prowess, provides unique opportunities to map informal settlements with precision and enhanced accuracy. This paper leverages cloud-based computing techniques within GEE to integrate spectral and textural features for accurate extraction of the location and spatial extent of informal settlements in Durban, South Africa. The paper aims to investigate the potential and advantages of GEE’s innovative image processing techniques to precisely depict morphologically varied informal settlements. Seven data input models derived from Sentinel 2A bands, band-derived texture metrics, and spectral indices were investigated through a random forest supervised protocol. The main objective was to explore the value of different data input combinations in accurately mapping informal settlements. The results revealed that the classification based on spectral bands + textural information yielded the highest informal settlement identification accuracy (94% F-score). The addition of spectral indices decreased mapping accuracy. Our results confirm that the highest spatial accuracy is achieved with the “textural features” model, which yielded the lowest root-mean-square log error (0.51) and mean absolute percent error (0.36). Our approach highlights the capability of GEE’s complex integrative data processing capabilities in extracting morphological variations of informal settlements in rugged and heterogeneous urban landscapes, with reliable accuracy.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Matarira",
+                    "given": "Dadirai"
+                },
+                {
+                    "family": "Mutanga",
+                    "given": "Onisimo"
+                },
+                {
+                    "family": "Naidu",
+                    "given": "Maheshvari"
+                }
+            ],
+            "container-title": "Remote Sensing",
+            "container-title-short": "Remote Sensing",
+            "id": "MatariraDadirai2022GEEf",
+            "issue": "20",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        10,
+                        14
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "5130",
+            "title": "Google Earth Engine for Informal Settlement Mapping: A Random Forest Classification Using Spectral and Textural Information",
+            "title-short": "Google Earth Engine for Informal Settlement Mapping",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "DOI": "10.1155/2022/5880959",
+            "ISSN": "1563-5147, 1024-123X",
+            "URL": "https://www.hindawi.com/journals/mpe/2022/5880959/",
+            "abstract": "Remote sensing is mainly used to investigate sites of dams, bridges, and pipelines to locate construction materials and provide detailed geographic information. In remote sensing image analysis, the images captured through satellite and drones are used to observe surface of the Earth. The main aim of any image classification-based system is to assign semantic labels to captured images, and consequently, using these labels, images can be arranged in a semantic order. The semantic arrangement of images is used in various domains of digital image processing and computer vision such as remote sensing, image retrieval, object recognition, image annotation, scene analysis, content-based image analysis, and video analysis. The earlier approaches for remote sensing image analysis are based on low-level and mid-level feature extraction and representation. These techniques have shown good performance by using different feature combinations and machine learning approaches. These earlier approaches have used small-scale image dataset. The recent trends for remote sensing image analysis are shifted to the use of deep learning model. Various hybrid approaches of deep learning have shown much better results than the use of a single deep learning model. In this review article, a detailed overview of the past trends is presented, based on low-level and mid-level feature representation using traditional machine learning concepts. A summary of publicly available image benchmarks for remote sensing image analysis is also presented. A detailed summary is presented at the end of each section. An overview regarding the current trends of deep learning models is presented along with a detailed comparison of various hybrid approaches based on recent trends. The performance evaluation metrics are also discussed. This review article provides a detailed knowledge related to the existing trends in remote sensing image classification and possible future research directions.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Mehmood",
+                    "given": "Maryam"
+                },
+                {
+                    "family": "Shahzad",
+                    "given": "Ahsan"
+                },
+                {
+                    "family": "Zafar",
+                    "given": "Bushra"
+                },
+                {
+                    "family": "Shabbir",
+                    "given": "Amsa"
+                },
+                {
+                    "family": "Ali",
+                    "given": "Nouman"
+                }
+            ],
+            "container-title": "Mathematical Problems in Engineering",
+            "container-title-short": "Mathematical Problems in Engineering",
             "editor": [
                 {
-                    "family": "Liang",
-                    "given": "Shunlin"
+                    "family": "Ahmad",
+                    "given": "Afaq"
+                }
+            ],
+            "id": "MehmoodMaryam2022RSIC",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        8,
+                        2
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "1-24",
+            "title": "Remote Sensing Image Classification: A Comprehensive Review and Applications",
+            "title-short": "Remote Sensing Image Classification",
+            "type": "article-journal",
+            "volume": "2022"
+        },
+        {
+            "DOI": "10.1016/j.jenvman.2017.03.095",
+            "ISSN": "0301-4797",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0301479717303201",
+            "abstract": "The Urban Heat Island (UHI) is a phenomenon that affects many millions of people worldwide. The higher temperatures experienced in urban areas compared to the surrounding countryside has enormous consequences for the health and wellbeing of people living in cities. The increased use of manmade materials and increased anthropogenic heat production are the main causes of the UHI. This has led to the understanding that increased urbanisation is the primary cause of the urban heat island. The UHI effect also leads to increased energy needs that further contribute to the heating of our urban landscape, and the associated environmental and public health consequences. Pavements and roofs dominate the urban surface exposed to solar irradiation. This review article outlines the contribution that pavements make to the UHI effect and analyses localized and citywide mitigation strategies against the UHI. Asphalt Concrete (AC) is one of the most common pavement surfacing materials and is a significant contributor to the UHI. Densely graded AC has low albedo and high volumetric heat capacity, which results in surface temperatures reaching upwards of 60 °C on hot summer days. Cooling the surface of a pavement by utilizing cool pavements has been a consistent theme in recent literature. Cool pavements can be reflective or evaporative. However, the urban geometry and local atmospheric conditions should dictate whether or not these mitigation strategies should be used. Otherwise both of these pavements can actually increase the UHI effect. Increasing the prevalence of green spaces through the installation of street trees, city parks and rooftop gardens has consistently demonstrated a reduction in the UHI effect. Green spaces also increase the cooling effect derived from water and wind sources. This literature review demonstrates that UHI mitigation techniques are best used in combination with each other. As a result of the study, it was concluded that the current mitigation measures need development to make them relevant to various climates and throughout the year. There are also many possible sources of future study, and alternative measures for mitigation have been described, thereby providing scope for future research and development following this review.",
+            "author": [
+                {
+                    "family": "Mohajerani",
+                    "given": "Abbas"
+                },
+                {
+                    "family": "Bakaric",
+                    "given": "Jason"
+                },
+                {
+                    "family": "Jeffrey-Bailey",
+                    "given": "Tristan"
+                }
+            ],
+            "container-title": "Journal of Environmental Management",
+            "id": "MohajeraniAbbas2017Tuhi",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "keyword": "Asphalt concrete,Pavements,Urban heat island,Urban heat island causes,Urban heat island consequences,Urban heat island mitigation measures",
+            "page": "522-538",
+            "title": "The urban heat island effect, its causes, and mitigation, with reference to the thermal properties of asphalt concrete",
+            "type": "article-journal",
+            "volume": "197"
+        },
+        {
+            "DOI": "10.3390/rs11050591",
+            "ISSN": "2072-4292",
+            "URL": "https://www.mdpi.com/2072-4292/11/5/591",
+            "abstract": "The Google Earth Engine (GEE) is a cloud computing platform designed to store and process huge data sets (at petabyte-scale) for analysis and ultimate decision making [...]",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Mutanga",
+                    "given": "Onisimo"
+                },
+                {
+                    "family": "Kumar",
+                    "given": "Lalit"
+                }
+            ],
+            "container-title": "Remote Sensing",
+            "container-title-short": "Remote Sensing",
+            "id": "MutangaOnisimo2019GEEA",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        3,
+                        12
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "591",
+            "title": "Google Earth Engine Applications",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "DOI": "10.1080/02626667.2020.1761021",
+            "ISSN": "0262-6667, 2150-3435",
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/02626667.2020.1761021",
+            "abstract": "Data assimilation (DA) offers immense potential for uncertainty identification, improving the initial estimates for hydrological and atmospheric modelling. This paper reviews the studies in hydrological DA using Kalman filters. Recent applications of Kalman filters in hydrological and atmospheric DA are summarized. Existing challenges for DA studies are briefly described. In addition, three case study examples are presented highlighting the effects of: (a) soil moisture DA in the Noah land surface model; (b) variational assimilation for improving precipitation forecasts in the WRF (Weather Research Forecast) model; and (c) simulating AMSR-2 (Advanced Microwave Scanning Radiometer-2) radiances towards DA. Although there are many unresolved issues in DA that warrant further research, it has immense potential for predicting variables at a better lead time for hydrometeorology.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Nair",
+                    "given": "Akhilesh S."
+                },
+                {
+                    "family": "Mangla",
+                    "given": "Rohit"
+                },
+                {
+                    "family": "P",
+                    "given": "Thiruvengadam"
+                },
+                {
+                    "family": "Indu",
+                    "given": "J."
+                }
+            ],
+            "container-title": "Hydrological Sciences Journal",
+            "container-title-short": "Hydrological Sciences Journal",
+            "id": "Nair2022",
+            "issue": "16",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        10
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "2457-2489",
+            "title": "Remote sensing data assimilation",
+            "type": "article-journal",
+            "volume": "67"
+        },
+        {
+            "DOI": "10.1016/j.agwat.2020.106197",
+            "ISSN": "0378-3774",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S037837741932373X",
+            "abstract": "The current study aims at reviewing and providing advances on methods for estimating and applying crop coefficients from observations of ground cover and vegetation height. The review first focuses on the relationships between single Kc and basal Kcb and various parameters including the fraction of ground covered by the canopy (fc), the leaf area index (LAI), the fraction of ground shaded by the canopy (fshad), the fraction of intercepted light (flight) and intercepted photosynthetic active radiation (fIPAR). These relationships were first studied in the 1970’s, for annual crops, and later, in the last decennia, for tree and vine perennials. Research has now provided a variety of methods to observe and measure fc and height (h) using both ground and remote sensing tools, which has favored the further development of Kc related functions. In the past, these relationships were not used predictively but to support the understanding of dynamics of Kc and Kcb in relation to the processes of evapotranspiration or transpiration, inclusive of the role of soil evaporation. Later, the approach proposed by Allen and Pereira (2009), the A&P approach, used fc and height (h) or LAI data to define a crop density coefficient that was used to directly estimate Kc and Kcb values for a variety of annual and perennial crops in both research and practice. It is opportune to review the A&P method in the context of a variety of studies that have derived Kc and Kcb values from field measured data with simultaneously observed ground cover fc and height. Applications used to test the approach include various tree and vine crops (olive, pear, and lemon orchards and vineyards), vegetable crops (pea, onion and tomato crops), field crops (barley, wheat, maize, sunflower, canola, cotton and soybean crops), as well as a grassland and a Bermudagrass pasture. Comparisons of Kcb values computed with the A&P method produced regression coefficients close to 1.0 and coefficients of determination ≥ 0.90, except for orchards. Results indicate that the A&P approach can produce estimates of potential Kcb, using vegetation characteristics alone, within reasonable or acceptable error, and are useful for refining Kcb for conditions of plant spacing, size and density that differ from standard values. The comparisons provide parameters appropriate to applications for the tested crops. In addition, the A&P approach was applied with remotely sensed fc data for a variety of crops in California using the Satellite Irrigation Management Support (SIMS) framework. Daily SIMS crop ET (ETc-SIMS) produced Kcb values using the FAO56 and A&P approaches. Combination of satellite derived fc and Kcb values with ETo data from Spatial CIMIS (California Irrigation Management Information System) produced ET estimates that were compared with daily actual crop ET derived from energy balance calculations from micrometeorological instrumentation (ETc EB).Results produced coefficients of regression of 1.05 for field crops and 1.08 for woody crops, and R2 values of 0.81 and 0.91, respectively. These values suggest that daily ETc-SIMS -based ET can be accurately estimated within reasonable error and that the A&P approach is appropriate to support that estimation. It is likely that accuracy can be improved via progress in remote sensing determination of fc. Tabulated Kcb results and calculation parameters are presented in a companion paper in this Special Issue.",
+            "author": [
+                {
+                    "family": "Pereira",
+                    "given": "L. S."
+                },
+                {
+                    "family": "Paredes",
+                    "given": "P."
+                },
+                {
+                    "family": "Melton",
+                    "given": "F."
+                },
+                {
+                    "family": "Johnson",
+                    "given": "L."
                 },
                 {
                     "family": "Wang",
-                    "given": "Jindi"
+                    "given": "T."
+                },
+                {
+                    "family": "López-Urrea",
+                    "given": "R."
+                },
+                {
+                    "family": "Cancela",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Allen",
+                    "given": "R. G."
                 }
             ],
-            "id": "liang_chapter_2020",
+            "container-title": "Agricultural Water Management",
+            "id": "pereira_prediction_2020",
             "issued": {
                 "date-parts": [
                     [
@@ -62,14 +965,14 @@
                     ]
                 ]
             },
-            "keyword": "Application, Inversion, Modeling, Remote sensing system, Satellite",
-            "page": "1-57",
-            "publisher": "Academic Press",
-            "title": "Chapter 1 - a systematic view of remote sensing",
-            "type": "chapter"
+            "keyword": "Basal crop coefficients,Density coefficient,Estimates of K for trees and annual crops,f from ground observations,f from NDVI,K under full cover,Operational K from f with SIMS framework",
+            "page": "106197",
+            "title": "Prediction of crop coefficients from fraction of ground cover and height. Background and validation using ground and remote sensing data",
+            "type": "article-journal",
+            "volume": "241"
         },
         {
-            "DOI": "https://doi.org/10.1016/j.rse.2019.111626",
+            "DOI": "10.1016/j.rse.2019.111626",
             "ISSN": "0034-4257",
             "URL": "https://www.sciencedirect.com/science/article/pii/S0034425719306467",
             "abstract": "In the face of the growing challenges brought about by human activities, effective planning and decision-making in biodiversity and ecosystem conservation, restoration, and sustainable development are urgently needed. Ecological models can play a key role in supporting this need and helping to safeguard the natural assets that underpin human wellbeing and support life on land and below water (United Nations Sustainable Development Goals; SDG 15 & 14). The urgency and complexity of safeguarding forest (SDG 15.2) and mountain ecosystems (SDG 15.4), for example, and halting decline in biodiversity (SDG 15.5) in the Anthropocene requires a re-envisioning of how ecological models can best support the comprehensive assessments of biodiversity and its change that are required for successful action. A key opportunity to advance ecological modeling for both predictive and explanatory purposes arises through a collaboration between ecologists and the Earth observation community, and a close integration of remote sensing and species distribution models. Remote sensing products have the capacity to provide continuous spatiotemporal information about key factors driving the distribution of organisms, therefore improving both the use and accuracy of these models for management and planning. Here we first survey the literature on remote sensing data products available to ecological modelers interested in improving predictions of species range dynamics under global change. We specifically explore the key biophysical processes underlying the distribution of species in the Anthropocene including climate variability, changes in land cover, and disturbances. We then discuss potential synergies between the ecological modeling and remote sensing communities, and highlight opportunities to close the data and conceptual gaps that currently impede a more effective application of remote sensing for the monitoring and modeling of ecological systems. Specific attention is given to how potential collaborations between the two communities could lead to new opportunities to report on progress towards global agendas - such as the Agenda 2030 for sustainable development of the United Nations or the Post-2020 Global Biodiversity Framework of the Convention for Biological Diversity, and help guide conservation and management strategies towards sustainability.",
@@ -196,65 +1099,482 @@
                     ]
                 ]
             },
-            "keyword": "Anthropocene, Monitoring, Remote sensing, Species distribution models, Sustainable development, Terrestrial ecosystems",
+            "keyword": "Anthropocene,Monitoring,Remote sensing,Species distribution models,Sustainable development,Terrestrial ecosystems",
             "page": "111626",
-            "title": "Monitoring biodiversity in the anthropocene using remote sensing in species distribution models",
+            "title": "Monitoring biodiversity in the Anthropocene using remote sensing in species distribution models",
             "type": "article-journal",
             "volume": "239"
         },
         {
-            "DOI": "https://doi.org/10.1016/j.agwat.2020.106197",
-            "ISSN": "0378-3774",
-            "URL": "https://www.sciencedirect.com/science/article/pii/S037837741932373X",
-            "abstract": "The current study aims at reviewing and providing advances on methods for estimating and applying crop coefficients from observations of ground cover and vegetation height. The review first focuses on the relationships between single Kc and basal Kcb and various parameters including the fraction of ground covered by the canopy (fc), the leaf area index (LAI), the fraction of ground shaded by the canopy (fshad), the fraction of intercepted light (flight) and intercepted photosynthetic active radiation (fIPAR). These relationships were first studied in the 1970’s, for annual crops, and later, in the last decennia, for tree and vine perennials. Research has now provided a variety of methods to observe and measure fc and height (h) using both ground and remote sensing tools, which has favored the further development of Kc related functions. In the past, these relationships were not used predictively but to support the understanding of dynamics of Kc and Kcb in relation to the processes of evapotranspiration or transpiration, inclusive of the role of soil evaporation. Later, the approach proposed by Allen and Pereira (2009), the A&P approach, used fc and height (h) or LAI data to define a crop density coefficient that was used to directly estimate Kc and Kcb values for a variety of annual and perennial crops in both research and practice. It is opportune to review the A&P method in the context of a variety of studies that have derived Kc and Kcb values from field measured data with simultaneously observed ground cover fc and height. Applications used to test the approach include various tree and vine crops (olive, pear, and lemon orchards and vineyards), vegetable crops (pea, onion and tomato crops), field crops (barley, wheat, maize, sunflower, canola, cotton and soybean crops), as well as a grassland and a Bermudagrass pasture. Comparisons of Kcb values computed with the A&P method produced regression coefficients close to 1.0 and coefficients of determination ≥ 0.90, except for orchards. Results indicate that the A&P approach can produce estimates of potential Kcb, using vegetation characteristics alone, within reasonable or acceptable error, and are useful for refining Kcb for conditions of plant spacing, size and density that differ from standard values. The comparisons provide parameters appropriate to applications for the tested crops. In addition, the A&P approach was applied with remotely sensed fc data for a variety of crops in California using the Satellite Irrigation Management Support (SIMS) framework. Daily SIMS crop ET (ETc-SIMS) produced Kcb values using the FAO56 and A&P approaches. Combination of satellite derived fc and Kcb values with ETo data from Spatial CIMIS (California Irrigation Management Information System) produced ET estimates that were compared with daily actual crop ET derived from energy balance calculations from micrometeorological instrumentation (ETc EB).Results produced coefficients of regression of 1.05 for field crops and 1.08 for woody crops, and R2 values of 0.81 and 0.91, respectively. These values suggest that daily ETc-SIMS -based ET can be accurately estimated within reasonable error and that the A&P approach is appropriate to support that estimation. It is likely that accuracy can be improved via progress in remote sensing determination of fc. Tabulated Kcb results and calculation parameters are presented in a companion paper in this Special Issue.",
-            "author": [
-                {
-                    "family": "Pereira",
-                    "given": "L. S."
-                },
-                {
-                    "family": "Paredes",
-                    "given": "P."
-                },
-                {
-                    "family": "Melton",
-                    "given": "F."
-                },
-                {
-                    "family": "Johnson",
-                    "given": "L."
-                },
-                {
-                    "family": "Wang",
-                    "given": "T."
-                },
-                {
-                    "family": "López-Urrea",
-                    "given": "R."
-                },
-                {
-                    "family": "Cancela",
-                    "given": "J. J."
-                },
-                {
-                    "family": "Allen",
-                    "given": "R. G."
-                }
-            ],
-            "container-title": "Agricultural Water Management",
-            "id": "pereira_prediction_2020",
-            "issued": {
+            "DOI": "10.1007/s11069-022-05642-y",
+            "ISSN": "0921-030X, 1573-0840",
+            "URL": "https://link.springer.com/10.1007/s11069-022-05642-y",
+            "abstract": "Decision makers require timely and exact delineation of landslide information for effective and quick response to a co-seismic or rainfall-triggered calamity. Remote sensing (RS) techniques provide prompt disaster responses on a local to regional scale, particularly in remote, isolated, and inaccessible places. These techniques, which are divided into pixel, sub-pixel, and object-based techniques, each have their own set of advantages and disadvantages. This study aims to investigate and evaluate the virtues and drawbacks of pixel, sub-pixel, and Object-Based Image Analysis (OBIA)-based approach for detecting co-seismic landslides in Muzaffarabad, Pakistan (Lesser Himalayas). Using SPOT and ASTER imagery, a comparison of classification techniques based on the MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSICorr), and the OBIA was performed. On SPOT-5 images, MLC and OBIA approaches were applied, while ASTER images were used for sub-pixel classification. Overall accuracy for pixel-based MLC is 80.8, 90.9% for the sub-pixel COSI-Corr method, and 91.4% for OBIA. As a result, it can be inferred that COSI-Corr and OBIA-based classification outperformed the pixel-based MLC classification technique. The OBIA result is more spatially consistent than the pixel-based outcomes with speckled pixel effects, and depending on visual interpretation. Due to varied geomorphic conditions, the OBIA’s ruleset makes it difficult to apply in different terrains. The COSI-Corr technique uses low-cost satellite data with a medium resolution to produce a plausible output. For this technique to work, suitable pre- and post-seismic event images (optical and digital elevation model) must be available (free of shadows and clouds).",
+            "accessed": {
                 "date-parts": [
                     [
-                        2020
+                        2023,
+                        3,
+                        23
                     ]
                 ]
             },
-            "keyword": "Basal crop coefficients, Density coefficient, Estimates of K for trees and annual crops, f from ground observations, f from NDVI, K under full cover, Operational K from f with SIMS framework",
-            "page": "106197",
-            "title": "Prediction of crop coefficients from fraction of ground cover and height. Background and validation using ground and remote sensing data",
+            "author": [
+                {
+                    "family": "Saba",
+                    "given": "Sumbal Bahar"
+                },
+                {
+                    "family": "Ali",
+                    "given": "Muhammad"
+                },
+                {
+                    "family": "Turab",
+                    "given": "Syed Ali"
+                },
+                {
+                    "family": "Waseem",
+                    "given": "Muhammad"
+                },
+                {
+                    "family": "Faisal",
+                    "given": "Shah"
+                }
+            ],
+            "container-title": "Natural Hazards",
+            "container-title-short": "Nat Hazards",
+            "id": "SabaSumbalBahar2022Cops",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        2
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "2383-2398",
+            "title": "Comparison of pixel, sub-pixel and object-based image analysis techniques for co-seismic landslides detection in seismically active area in Lesser Himalaya, Pakistan",
             "type": "article-journal",
-            "volume": "241"
+            "volume": "115"
+        },
+        {
+            "DOI": "10.1016/j.isprsjprs.2021.02.007",
+            "ISSN": "0924-2716",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S092427162100040X",
+            "abstract": "Atmospheric correction is an essential step in hyperspectral imaging and target detection from spectrometer remote sensing data. State-of-the-art atmospheric correction approaches either require extensive filed experiments or prior knowledge of atmospheric characteristics to improve the predicted accuracy, which are computational expensive and unsuitable for real time application. To take full advantages of remote sensing observation in quickly and reliably acquiring data for a large area, an automatic and efficient processing tool is required for atmospheric correction. In this paper, we propose a time-dependent neural network for automatic atmospheric correction and target detection using multi-scan hyperspectral data under different elevation angles. In addition to the total radiance, the collection day and time are also incorporated to improve the time-dependency of the network and represent the seasonal and diurnal characteristics of atmosphere and solar radiation. Results show that the proposed network has the capacity to accurately provide atmospheric characteristics and estimate precise reflectivity spectra with 95.72% averaged accuracy for different materials, including vegetation, sea ice, and ocean. Additional experiments are designed to investigate the network’s temporal dependency and performance on missing data. The error analysis confirms that our proposed network is capable of estimating atmospheric characteristics under both seasonally and diurnally varying environments and handling the influence of missing data. Both the predicted results and error analysis are promising and demonstrate that our network has the ability of providing accurate atmospheric correction and target detection in real time.",
+            "author": [
+                {
+                    "family": "Sun",
+                    "given": "Jian"
+                },
+                {
+                    "family": "Xu",
+                    "given": "Fangcao"
+                },
+                {
+                    "family": "Cervone",
+                    "given": "Guido"
+                },
+                {
+                    "family": "Gervais",
+                    "given": "Melissa"
+                },
+                {
+                    "family": "Wauthier",
+                    "given": "Christelle"
+                },
+                {
+                    "family": "Salvador",
+                    "given": "Mark"
+                }
+            ],
+            "container-title": "ISPRS Journal of Photogrammetry and Remote Sensing",
+            "id": "sun_automatic_2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "keyword": "Atmospheric correction,Deep learning,Hyperspectral,Neural network,Reflectivity",
+            "page": "117-131",
+            "title": "Automatic atmospheric correction for shortwave hyperspectral remote sensing data using a time-dependent deep neural network",
+            "type": "article-journal",
+            "volume": "174"
+        },
+        {
+            "DOI": "10.1111/jiec.12980",
+            "ISSN": "1088-1980, 1530-9290",
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.12980",
+            "abstract": "Urbanization often entails a surge in urban temperature compared to the rural surroundings: the Urban Heat Island (UHI) effect. Such a temperature increase triggers the formation of pollutants worsening the urban air quality. Jointly, bad air quality and UHI affect ecosystems and human health. To alleviate the impacts on the population and the environment, it is crucial to design effective UHI-mitigation measures. Life Cycle Assessment (LCA) is an assessment tool able to capture the complexity of urban settlements and quantify their impact. Yet, as currently implemented, LCA neglects the interactions between the built environment and the local climate, omitting the resulting impacts. This study reviews the existing literature, showing the lack of studies that organically include interactions between the built environment and local climate in LCA. This forms the basis to identify the unsuitability of the current LCA framework for comprehensively capturing the impact of urban settlements. To overcome this limitation, this research offers a pathway to expand the LCA methodology, indicating the necessity to (a) couple the LCA methodology with climate models or physical relations that quantify the interactions between the local climate and the built environment; (b) include novel impact categories in LCA to address such interactions; and (c) use existing or ad hoc developed characterization factors to assess the impacts related to the UHI effect. The LCA community can build on the frame of reference offered by this research to overcome the current limitations of LCA and enable its use for a comprehensive assessment of the impacts of UHI and its mitigation measures.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Susca",
+                    "given": "Tiziana"
+                },
+                {
+                    "family": "Pomponi",
+                    "given": "Francesco"
+                }
+            ],
+            "container-title": "Journal of Industrial Ecology",
+            "container-title-short": "Journal of Industrial Ecology",
+            "id": "SuscaTiziana2020Hiei",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        4
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "410-423",
+            "title": "Heat island effects in urban life cycle assessment: Novel insights to include the effects of the urban heat island and UHI‐mitigation measures in LCA for effective policy making",
+            "title-short": "Heat island effects in urban life cycle assessment",
+            "type": "article-journal",
+            "volume": "24"
+        },
+        {
+            "DOI": "10.3390/su15031820",
+            "ISSN": "2071-1050",
+            "URL": "https://www.mdpi.com/2071-1050/15/3/1820",
+            "abstract": "The energy balance differences between urban and rural areas give rise to a representative phenomenon of urban climate change called the urban heat island (UHI). The UHI phenomenon, which is exacerbated by global warming effects and urban expansion, exposes urban areas and populations to thermal stress and overheating. Therefore, measuring the intensity of UHI vulnerability is needed to mitigate its effects on health, comfort, energy consumption and infrastructure. Additionally, urban decision makers are looking for methodologies to identify the most vulnerable areas in urban planning. This research aims to investigate areas prone to urban overheating in Montpellier Mediterranean metropolitan area as a representative case study of the French urban planning context. The objective is to develop a methodology for assessing UHI vulnerability based on the interaction of exposure and sensitivity to urban planning policies. Accordingly, a set of fifteen indicators is developed to visualize urban planning policies, exposure and sensitivity to urban overheating. A statistical-based method is applied to determine the individual weights based on the indicators’ variance, which is calculated using principal component analysis (PCA). The spatial and urban planning distribution of vulnerability is then analyzed. The results indicate that the areas with the highest urban planning challenges are most vulnerable to UHI. In fact, the results reveal that these areas have urban planning characteristics likely to aggravate urban overheating. Therefore, this research proposes a methodology for integrating mitigation solutions into urban planning: increase in permeable and green areas; improvement of urban ventilation and heat exchange and decrease in anthropogenic heat generation. It demonstrates that combining urban planning policies with exposure and sensitivity is a new perspective for vulnerability studies. The findings of this study can be utilized by decision makers to better visualize areas susceptible to UHI and plan appropriate mitigation strategies.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Técher",
+                    "given": "Magalie"
+                },
+                {
+                    "family": "Ait Haddou",
+                    "given": "Hassan"
+                },
+                {
+                    "family": "Aguejdad",
+                    "given": "Rahim"
+                }
+            ],
+            "container-title": "Sustainability",
+            "container-title-short": "Sustainability",
+            "id": "TécherMagalie2023UHIV",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        1,
+                        18
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "1820",
+            "title": "Urban Heat Island’s Vulnerability Assessment by Integrating Urban Planning Policies: A Case Study of Montpellier Méditerranée Metropolitan Area, France",
+            "title-short": "Urban Heat Island’s Vulnerability Assessment by Integrating Urban Planning Policies",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1088/1757-899X/1145/1/012086",
+            "ISSN": "1757-8981, 1757-899X",
+            "URL": "https://iopscience.iop.org/article/10.1088/1757-899X/1145/1/012086",
+            "abstract": "The significance of remote sensing observations in monitoring environmental phenomena is a well-established fact. High resolution satellite images acquired using multispectral sensors contribute greatly in this aspect. In the current study, an illustration of this factor is presented using high resolution multispectral data to analyse drought conditions over Solapur, India. Here, Sentinel-2 data is utilized to estimate indices like Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI) and Vegetation condition index (VCI), which help us to infer the drought situation in the region of interest.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Vanajith",
+                    "given": "V"
+                },
+                {
+                    "family": "Daniel",
+                    "given": "Susan G"
+                },
+                {
+                    "family": "Rugma",
+                    "given": "S"
+                },
+                {
+                    "family": "Dhanya",
+                    "given": "M"
+                }
+            ],
+            "container-title": "IOP Conference Series: Materials Science and Engineering",
+            "container-title-short": "IOP Conf. Ser.: Mater. Sci. Eng.",
+            "id": "VanajithV2021MDuM",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        4,
+                        1
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "012086",
+            "title": "Monitoring Drought using Multispectral Remote Sensing – A Case Study",
+            "type": "article-journal",
+            "volume": "1145"
+        },
+        {
+            "DOI": "10.3390/rs13183778",
+            "ISSN": "2072-4292",
+            "URL": "https://www.mdpi.com/2072-4292/13/18/3778",
+            "abstract": "Earth system science has changed rapidly due to global environmental changes and the advent of Earth observation technology. Therefore, new tools are required to monitor, measure, analyze, evaluate, and model Earth observation data. Google Earth (GE) was officially launched by Google in 2005 as a ”geobrowser”, and Google Earth Engine (GEE) was released in 2010 as a cloud computing platform with substantial computational capabilities. The use of these two tools or platforms in various applications, particularly as used by the remote sensing community, has developed rapidly. In this paper, we reviewed the applications and trends in the use of GE and GEE by analyzing peer-reviewed articles, dating up to January 2021, in the Web of Science (WoS) core collection using scientometric analysis (i.e., by using CiteSpace) and meta-analysis. We found the following: (1) the number of articles describing the use of GE or GEE increased substantially from two in 2006 to 530 in 2020. The number of GEE articles increased much faster than those concerned with the use of GE. (2) Both GE and GEE were extensively used by the remote sensing community as multidisciplinary tools. GE articles covered a broader range of research areas (e.g., biology, education, disease and health, economic, and information science) and appeared in a broader range of journals than those concerned with the use of GEE. (3) GE and GEE shared similar keywords (e.g., “land cover”, “water”, “model”, “vegetation”, and “forest”), which indicates that their application is of great importance in certain research areas. The main difference was that articles describing the use of GE emphasized its use as a visual display platform, while those concerned with GEE placed more emphasis on big data and time-series analysis. (4) Most applications of GE and GEE were undertaken in countries, such as the United States, China, and the United Kingdom. (5) GEE is an important tool for analysis, whereas GE is used as an auxiliary tool for visualization. Finally, in this paper, the merits and limitations of GE and GEE, and recommendations for further improvements, are summarized from an Earth system science perspective.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        23
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Zhao",
+                    "given": "Qiang"
+                },
+                {
+                    "family": "Yu",
+                    "given": "Le"
+                },
+                {
+                    "family": "Li",
+                    "given": "Xuecao"
+                },
+                {
+                    "family": "Peng",
+                    "given": "Dailiang"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Yongguang"
+                },
+                {
+                    "family": "Gong",
+                    "given": "Peng"
+                }
+            ],
+            "container-title": "Remote Sensing",
+            "container-title-short": "Remote Sensing",
+            "id": "ZhaoQiang2021PaTi",
+            "issue": "18",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        9,
+                        21
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "3778",
+            "title": "Progress and Trends in the Application of Google Earth and Google Earth Engine",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "ISBN": "0471017817",
+            "author": [
+                {
+                    "family": "Robinson",
+                    "given": "Arthur Howard"
+                }
+            ],
+            "edition": "4th ed.",
+            "id": "Robinson1978",
+            "issued": {
+                "date-parts": [
+                    [
+                        1978
+                    ]
+                ]
+            },
+            "keyword": "Cartography",
+            "publisher": "Wiley",
+            "publisher-place": "New York ;",
+            "title": "Elements of cartography / arthur robinson, randall sale, joel morrison.",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.worldwildlife.org/stories/celebrating-20-years-of-protecting-the-brazilian-amazon",
+            "author": [
+                {
+                    "family": "Foster",
+                    "given": "Nina"
+                }
+            ],
+            "id": "foster_celebrating_2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Celebrating 20 years of protecting the brazilian amazon. WWF",
+            "title-short": "Celebrating 20 years of protecting the brazilian amazon",
+            "type": "webpage"
+        },
+        {
+            "DOI": "https://doi.org/10.1016/B978-008045405-4.00237-8",
+            "ISBN": "978-0-08-045405-4",
+            "URL": "https://www.sciencedirect.com/science/article/pii/B9780080454054002378",
+            "abstract": "Remotely sensed data and methods are used extensively to provide data layers that are used in ecological modeling. Understanding fundamental remotely sensed concepts helps ecosystem modelers make informed decisions regarding the utility and limitations of the broad spectrum of available remote-sensing and derived data. The main focus of this article is to introduce remote-sensing science and its application to ecological modeling. It is not designed to be comprehensive on the subject of remote sensing, but rather to introduce basic concepts and terminology. The intended audience is consumers, not producers of remote-sensing products. The article begins with an overview of fundamental remote-sensing concepts. This is followed by a section on how remote-sensing data can be used to derive a broad range of biophysical data sets that are useful for terrestrial and aquatic ecological modeling. Several of the more common data sets derived from remotely sensed data are described with comments about how the data sets are produced, their strengths, and limitations. The article concludes with a summary of the accuracy and validation.",
+            "author": [
+                {
+                    "family": "Horning",
+                    "given": "N."
+                }
+            ],
+            "container-title": "Encyclopedia of ecology",
+            "editor": [
+                {
+                    "family": "Jørgensen",
+                    "given": "Sven Erik"
+                },
+                {
+                    "family": "Fath",
+                    "given": "Brian D."
+                }
+            ],
+            "id": "jorgensen_remote_2008",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ]
+            },
+            "keyword": "Accuracy assessment, Image, Land cover, Land cover change, Modeling, Remote sensing, Satellite, Soil moisture, Topography, Validation",
+            "page": "2986-2994",
+            "publisher": "Academic Press",
+            "publisher-place": "Oxford",
+            "title": "Remote sensing",
+            "type": "chapter"
+        },
+        {
+            "ISSN": "1093-474X",
+            "abstract": "The Middle Mississippi River (MMR) and lower Missouri River (MOR) provide critical navigation waterways, ecological habitat, and flood conveyance. They are also directly linked to processes affecting geomorphic and ecological conditions in the lower MR and Delta. For this study, a method was developed to measure suspended‐sediment concentration (SSC) and turbidity along the MMR and the lower MOR using Landsat imagery. Data from nine United States Geological Survey water‐quality monitoring stations were used to create a model‐development dataset and a model‐validation dataset. Concurrent gaging data were identified for available Landsat images to generate the datasets. Surface‐reflectance filters were developed to eliminate images with cirrus cloud coverage or vessel traffic. Using the filtered model‐development dataset, unique reflectance‐SSC and reflectance‐turbidity models were developed for three Landsat sensors: Landsat 8 Operational Land Imager, Landsat 7 Enhanced Thematic Mapper Plus, and Landsat 4–5 Thematic Mapper. Coefficient of determination values for the models ranged from 0.72 to 0.88 for the model‐development dataset. The model‐validation dataset was used to evaluate the performance of the models and had coefficient of determination values ranging from 0.62 to 0.79.",
+            "author": [
+                {
+                    "family": "Pereira",
+                    "given": "Leticia S. F."
+                },
+                {
+                    "family": "Andes",
+                    "given": "Lisa C."
+                },
+                {
+                    "family": "Cox",
+                    "given": "Amanda L."
+                },
+                {
+                    "family": "Ghulam",
+                    "given": "Abduwasit"
+                }
+            ],
+            "container-title": "Journal of the American Water Resources Association",
+            "id": "PereiraLeticiaS.F.2018MSCa",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "keyword": "Analysis ; Cirrus clouds ; Data ; Datasets ; Earth resources technology satellites ; Ecological conditions ; Ecological monitoring ; Environmental monitoring ; Gaging ; Geological surveys ; Geomorphology ; Image quality ; Imagery ; Landsat ; Landsat imagery ; Landsat satellites ; Measurement ; Middle Mississippi River ; Monitoring systems ; Navigation ; Reflectance ; Remote sensing ; Rivers ; Satellite imagery ; Sediment concentration ; Sediment transport ; Sediments ; Surveying ; suspended‐sediment concentration ; Traffic models ; Turbidity ; Water quality ; Waterways",
+            "page": "440-450",
+            "publisher": "Wiley Subscription Services, Inc",
+            "publisher-place": "Middleburg",
+            "title": "Measuring suspended‐sediment concentration and turbidity in the middle mississippi and lower missouri rivers using landsat data",
+            "type": "article-journal",
+            "volume": "54"
+        },
+        {
+            "ISSN": "0301-4797",
+            "abstract": "•Deforestation dynamics and urban growth differ among municipalities in the Manaus Metropolitan Region.•Simulated deforestation is distributed close to previously deforested areas and roads.•Protected areas are important to contain deforestation and urban expansion in the Amazon.•The size of simulated urban patches increases in areas with a higher deforestation and near the roads.",
+            "author": [
+                {
+                    "family": "Santos",
+                    "given": "Yara L. F."
+                },
+                {
+                    "family": "Yanai",
+                    "given": "Aurora M."
+                },
+                {
+                    "family": "Ramos",
+                    "given": "Camila J. P."
+                },
+                {
+                    "family": "Graça",
+                    "given": "Paulo M. L. A."
+                },
+                {
+                    "family": "Veiga",
+                    "given": "Jose A. P."
+                },
+                {
+                    "family": "Correia",
+                    "given": "Francis W. S."
+                },
+                {
+                    "family": "Fearnside",
+                    "given": "Philip M."
+                }
+            ],
+            "container-title": "Journal of environmental management",
+            "id": "SantosYaraL.F.2022Adau",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "keyword": "Biological Phenomena ; Brazil ; Climatic changes ; Conservation of Natural Resources ; Deforestation ; Environmental aspects ; Growth ; Research institutes",
+            "page": "114279-114279",
+            "publisher": "Elsevier Ltd",
+            "publisher-place": "England",
+            "title": "Amazon deforestation and urban expansion: Simulating future growth in the manaus metropolitan region, brazil",
+            "title-short": "Amazon deforestation and urban expansion",
+            "type": "article-journal",
+            "volume": "304"
         }
     ],
     "project_biblios": [

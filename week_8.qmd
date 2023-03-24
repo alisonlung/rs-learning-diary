@@ -108,7 +108,7 @@ composition of landuse, footprint, planted space and air conditioning in
 these zone.
 
 ![Framework of assessment scheme
-\[\@TécherMagalie2023UHIV\]](img/Capture_18.JPG){fig-align="center"
+[@TécherMagalie2023UHIV]](img/Capture_18.JPG){fig-align="center"
 width="512"}
 
 The proposed framework is comprehensively built by considering various
@@ -151,7 +151,7 @@ calculation it provided is based on specific region/ case study, causing
 a limit direct application of proposed methodology, as urban settlements
 in different city are unique in structure. Therefore, reviewing the
 consideration of policy making mentioned this week, this assessment
-framework may have deficency in showing the disparities in cities.
+framework may have deficiency in showing the disparities in cities.
 
 ## Reflection
 
@@ -166,10 +166,10 @@ planning can highly impact the equality between neighbourhoods, such as
 the inequality of accessing green space which the quantity and quality
 of urban green space may varies between places.
 
-An important idea I retrived from this week content is literature review
-acts as an important role when structuring framework for policy. Other
-than providing insight on how the current system is formed based on
-historical record, it also assist the justification of definitions,
+An important idea I retrieved from this week content is literature
+review acts as an important role when structuring framework for policy.
+Other than providing insight on how the current system is formed based
+on historical record, it also assist the justification of definitions,
 methodology by previous literature and risk evaluation on approach.
 Therefore, in future applications, I have a better idea on how I should
 approach an issue/ project that involve policies, and how I can evaluate

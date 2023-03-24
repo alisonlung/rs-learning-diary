@@ -14,7 +14,7 @@ On the other hand, 2 types of classification is introduced:unsupervised classifi
 
 Recent research focuses on the use of machine learning/ expert systems or hybrid approach in image classification. @MehmoodMaryam2022RSIC provided a more detailed summary of the basic divisions in learning techniques, especially for deep learning models.
 
-![Image classification techniques \[\@MehmoodMaryam2022RSIC\]](img/Capture_12.JPG){fig-align="center" width="519"}
+![Image classification techniques [@MehmoodMaryam2022RSIC]](img/Capture_12.JPG){fig-align="center" width="519"}
 
 Apart from considering the type of techniques to apply, user also needs to decide between pixel-based, object-based and scene-based classification methods. @MehmoodMaryam2022RSIC point out that as the spatial resolution of remote sensing images has drastically increased, the popularity of using pixel-based has reduced and research trends changes towards applying object-based classification.
 
@@ -48,7 +48,7 @@ With the need of compiling geological map series in Tunisia, @AlbertGáspár2021
 
 Application of machine learning and remotely sensed data in geological mapping has more concerns than LULC mapping, as cartographic materials should be included to describe geological features characteristic morphology. Authors demonstrated a lot of effort in deriving the right choice of predictors and parameters by considering:
 
- - highlight of iron-bearing minerals in lithological variables
+-   highlight of iron-bearing minerals in lithological variables
 
 \- stronger predictor variables from available data in mean decrease gini values
 
@@ -64,7 +64,7 @@ This study provide a good example on how to structure image classification by th
 
 Study by @GuoShanchuan2021Scog used object-based classification with Landsat time series data to monitor the spatiotemporal changes of glacier and snow fluctuations at Namcha Barwa--Gyala Peri (NBGP) massif, where most serious glacier retreat is experienced under climate change. The research used object-based classification because of its ability in discriminating objects with similar spectral features and adaptive processing units that applicable for multisource data. Similar to the observation mentioned by @MehmoodMaryam2022RSIC, @GuoShanchuan2021Scog indicated that pixel-based classification restricts the use of classification features and result in 'salt and pepper' effects. Using Landsat and topographic data, debris-glacier is classified with the following procedures:
 
-![Procedures of debris-glacier classification \[\@GuoShanchuan2021Scog\]](img/Capture_13.JPG){fig-align="center" width="479"}
+![Procedures of debris-glacier classification [@GuoShanchuan2021Scog]](img/Capture_13.JPG){fig-align="center" width="479"}
 
 A critical challenge of this study is the need of defining threshold for implementing multiple hierarchical level rule-based classification. Other than using NDVI to extract non-vegetation or sparse vegetation region, analyst need to have a substantial background understanding of feature characteristics physically and spectrally, such as defining elevation threshold from glacier terminus and slope restriction of debris-covered glacier. Therefore, the glacial environment dynamics is comparatively complex and challenging to classify, especially when segments in object-based classification is generated from the criteria of homogeneity.
 

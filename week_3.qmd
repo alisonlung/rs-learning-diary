@@ -36,7 +36,7 @@ Other than the mentioned general operations, image enhancement can also apply sp
 
 Recently, researchers are also proposing methods to increase the efficiency in satellite image pre-processing by using machine learning techniques. Acknowledged the extensive computation and deficiency in real time application, @sun_automatic_2021 proposed using time-dependent deep neural network for automatic atmospheric correction and target detection. The study is based on the advantage of remote sensing (i.e. frequent, reliable and large area data) and aimed at producing a network that study all atmospheric characteristics that affect the observed total radiance. Thus, other than total radiance map, the network also requires inputs about collection day of the year and time of the day, which considers the seasonal and diurnal variability of atmosphere and their impact on incoming solar radiation and atmospheric conditions [@sun_automatic_2021]. Although the application of this network is limited due to the intensive time and cost in collecting ground truth measurements, the research presented how image processing in remote sensing can be improved with state-of-art technologies by showing its potential in integrating with deep learning based approach in atmospheric correction tasks.
 
-![Proposed deep learning solution \[\@sun_automatic_2021\]](img/Capture_5.JPG){fig-align="center" width="448"}
+![Proposed deep learning solution [@sun_automatic_2021]](img/Capture_5.JPG){fig-align="center" width="448"}
 
 ### Geometric Processing
 

@@ -38,7 +38,7 @@ Message from this video is image reduction can also be adopt flexibly according 
 
 GEE as a cloud computing geospatial tool benefits the community by its high accessibility of data and user-friendly interface for interactive data and algorithm development. The open source use caters the general public by reducing the necessity of using computer with large processing powers and software in remote sensing analysis, which increase the equality of undertaking geospatial research in different nations [@MutangaOnisimo2019GEEA]. In overall, @ZhaoQiang2021PaTi analysed the potential of GEE by its advantages and limitations:
 
-![Advantages and limitation of GEE \[\@ZhaoQiang2021PaTi\]](img/Capture_8.JPG){fig-align="center" width="386"}
+![Advantages and limitation of GEE [@ZhaoQiang2021PaTi]](img/Capture_8.JPG){fig-align="center" width="386"}
 
 Despite having these limitation, GEE still able to provide sufficient collection of medium to low resolution data and support a majority of geospatial analysis. Therefore, this freely accessible platform will definitely assists future studies with its advantages.
 
@@ -54,7 +54,7 @@ Research by @MutangaOnisimo2019GEEA summarised the contribution of GEE in four m
 
     The recent study by @MatariraDadirai2022GEEf implemented the cloud-based computing techniques in GEE to interpret the morphologically varied informal settlements by spectral and textural information in Durban, Sourth Africa. The paper used spectral bands, spectral indices and texture features from Sentinel 2A imagery as the input of random forest classification, in which textural features is calculated by the GLCM algorithm in ENVI software.
 
-    ![Research workflow \[\@MatariraDadirai2022GEEf\]](img/Capture_9.JPG){alt="Research workflow [@MatariraDadirai2022GEEf]" fig-align="center" width="510"}
+    ![Research workflow \[\@MatariraDadirai2022GEEf\]](img/Capture_9.JPG){alt="Research workflow [@MatariraDadirai2022GEEf]" fig-align="center" width="500"}
 
     Reviewing the successful application for informal settlement mapping in GEE, @MatariraDadirai2022GEEf pointed out that the characteristics of simplified access and process of satellite data, versatility and adaptability of platform, and efficiency in performing pixel-based classification improves urban area mapping from traditional static, product-based approach. This study demonstrates the ability of GEE in handling large dataset and performing more advance analysis like random forest classification. It shows how the bulk of processing and analysis of remote sensing imagery can be performed collectively in GEE to increase the efficiency in script writing. For the GLCM textural features, a possible improvement for the research workflow is using the ee.Image.glcmTexture function in GEE instead of estimating GLCM texture features with ENVI, which simplify the procedures by minimising the transition between platforms.
 
