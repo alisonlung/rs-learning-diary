@@ -2,7 +2,7 @@
 
 ## Summary
 
-Remote sensing provides an approach to collect, store and extract environmental information from satellite image without direct contact[@Robinson1978]. With the variety of available platforms, understanding the characteristics and difference between sensors presents an importance when studying ground features for a specific study area. When considering the suitability of satellite imagery, the user should concern about the basic characteristics:
+Remote sensing provides an approach to collect, store and extract environmental information from satellite image without direct contact [@Robinson1978]. With the variety of available platforms, understanding the characteristics and difference between sensors presents an importance when studying ground features for a specific study area. When considering the suitability of satellite imagery, the user should concern about the basic characteristics:
 
 1.  *Type of sensor*
 

@@ -1575,6 +1575,26 @@
             "title-short": "Amazon deforestation and urban expansion",
             "type": "article-journal",
             "volume": "304"
+        },
+        {
+            "URL": "https://www.youtube.com/watch?v=WvaBZbph_cU&ab_channel=GoogleEarth",
+            "author": [
+                {
+                    "family": "Earth",
+                    "given": "Google"
+                }
+            ],
+            "id": "GEE_2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Geo for good 2022: Intro to machine learning and earth engine",
+            "title-short": "Geo for good 2022",
+            "type": "webpage"
         }
     ],
     "project_biblios": [
