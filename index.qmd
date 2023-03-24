@@ -2,7 +2,7 @@
 
 ## Preface {.unnumbered}
 
-This is a Learning Diary for [CASA0023 Remotely Sensing Cities and Environment](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html).
+This is a Learning Diary for [CASA0023 Remotely Sensing Cities and Environment](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html) Component 2: Online Individual Learning Diary.
 
 Content in each week will be presented by 3 sections:
 
@@ -14,6 +14,8 @@ Content in each week will be presented by 3 sections:
 
 ## About Me {.unnumbered}
 
-Hello :) My name is Yuet Yung Lung, an international student from Hong Kong studying MSc Urban Spatial Science at UCL. I graduated from BSc Geomatics (Land Surveying), Hong Kong Polytechnic University. I formerly worked as a land survey graduate and GIS technician in HK and UK.
+Hello 👋🏻 My name is Yuet Yung Lung, Alison.
 
-Welcome to my Learning Diary! I am excited to learn more about remote sensing :D ![GIF By Rick And Morty](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGNlNDU5ZTBjYmE1ODU5NzQzNGIxODEwOTdkNjAyM2RiMTJkZjMzMyZjdD1n/DTh1K6VuivY0gEuzWy/giphy.gif){fig-align="center" width="714"}
+I graduated from BSc Geomatics (Land Surveying) at Hong Kong Polytechnic University and currently pursuing a master’s degree in Urban Spatial Science at UCL. I formerly worked as a land survey graduate and GIS technician in HK and UK respectively.
+
+Welcome to my Learning Diary! I am excited to learn more about remote sensing! 🌎️ ![GIF By Rick And Morty](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGNlNDU5ZTBjYmE1ODU5NzQzNGIxODEwOTdkNjAyM2RiMTJkZjMzMyZjdD1n/DTh1K6VuivY0gEuzWy/giphy.gif){fig-align="center" width="714"}

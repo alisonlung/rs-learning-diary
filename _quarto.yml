@@ -6,6 +6,17 @@ book:
   title: "CASA0023 Learning Diary"
   author: "Yuet Yung Lung (22082423)"
   date: "24/03/2023"
+  navbar:
+    logo: img/earth.png
+    collapse: true
+    collapse-below: sm
+    background: primary
+    foreground: light
+    search: true
+  sidebar:
+    style: floating
+    reader-mode: true
+    search: false
   chapters:
     - index.qmd
     - week_1.qmd
@@ -17,6 +28,7 @@ book:
     - week_7.qmd
     - week_8.qmd
     - references.qmd
+  page-navigation: true
 
 bibliography: references.bib
 

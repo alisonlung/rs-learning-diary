@@ -1,4 +1,4 @@
-# Week 3: Correction of Remote Sensing Data
+# Correction of Remote Sensing Data
 
 ## Summary
 

@@ -1,5 +1,7 @@
-# Week 2: Portfolio
+#Portfolio
 
 ## Week 2 Xaringan Presentation
+
+Please check out the week 2 learning diary by clicking the link below! 🖱️
 
 [Link to Landsat 8 Presentation](https://alisonlung.github.io/rs-xaringan/)

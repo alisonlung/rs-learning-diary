@@ -4,7 +4,7 @@ editor:
     wrap: 72
 ---
 
-# Week 7: Classification The Big Questions and Accuracy
+# Classification The Big Questions and Accuracy
 
 ## Summary
 

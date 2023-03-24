@@ -4,7 +4,7 @@ editor:
     wrap: 72
 ---
 
-# Week 8: Temperature and Policy
+# Temperature and Policy
 
 ## Summary
 
@@ -85,15 +85,21 @@ the effectiveness comparing to case studies in lecture.
 A methodology for assessing UHI vulnerability is proposed by
 @TécherMagalie2023UHIV to identify prone area with high vulnerability .
 A total of 15 input indicators are developed from vulnerability studies
-and generate urban vulnerability map based on 3 components: 1. *Urban
-planning policies*: green spaces, building footprint, building height,
-construction's location & air conditioning 2. *Exposure to urban
-overheating*: topography, proximity to natural areas, SUHI intensity,
-population density & land uses (daytime & nightime) 3. *Sensitivity to
-urban overheating*: sensitive population, heath and care facilities,
-low-income households & building age These indicators are weighted by
-explicit weights in calculation and the dimensionality of combined
-output is reduced by principal component analysis.
+and generate urban vulnerability map based on 3 components:
+
+1\. *Urban planning policies*: green spaces, building footprint,
+building height, construction's location & air conditioning
+
+2\. *Exposure to urban overheating*: topography, proximity to natural
+areas, SUHI intensity, population density & land uses (daytime &
+nightime)
+
+3\. *Sensitivity to urban overheating*: sensitive population, heath and
+care facilities, low-income households & building age
+
+These indicators are weighted by explicit weights in calculation and the
+dimensionality of combined output is reduced by principal component
+analysis.
 
 Authors adopted the UHI vulnerability assessment scheme in the
 Mediterranean city of Montpellier context to reveal that the most

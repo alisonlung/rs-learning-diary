@@ -1,4 +1,4 @@
-# Week 5: An Introduction to Google Earth Engine
+# An Introduction to Google Earth Engine
 
 ## Summary
 
@@ -24,7 +24,7 @@ Research by @MutangaOnisimo2019GEEA summarised the contribution of GEE in four m
 
 ![Research workflow for studying settlements in Durban](img/Capture_9.JPG){fig-align="center" width="364"}
 
-Reviewing the successful application for informal settlement mapping in GEE, @MatariraDadirai2022GEEf pointed out that the characteristics of simplified access and process of satellite data, versatility and adaptability of platform, and efficiency in performing pixel-based classification improves urban area mapping from traditional static, product-based approach. This study demonstrates the ability of GEE in handling large dataset and performing more advance analysis like random forest classification. It shows how the bulk of processing and analysis of remote sensing imagery can be performed collectively in GEE to increase the efficiency in script writing. For the GLCM textural features, a possible improvement for the research workflow is using the ee.Image.glcmTexture function in GEE instead of estimating GLCM texture features with ENVI, which simplify the procedures by minimising the transition between platforms.
+  Reviewing the successful application for informal settlement mapping in GEE,         @MatariraDadirai2022GEEf pointed out that the characteristics of simplified access and process of satellite data, versatility and adaptability of platform, and efficiency in performing pixel-based classification improves urban area mapping from traditional static, product-based approach. This study demonstrates the ability of GEE in handling large dataset and performing more advance analysis like random forest classification. It shows how the bulk of processing and analysis of remote sensing imagery can be performed collectively in GEE to increase the efficiency in script writing. For the GLCM textural features, a possible improvement for the research workflow is using the ee.Image.glcmTexture function in GEE instead of estimating GLCM texture features with ENVI, which simplify the procedures by minimising the transition between platforms.
 
 ## Reflection
 
